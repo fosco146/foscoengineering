@@ -6,170 +6,46 @@
     <title>Independent 3rd-Party Engineering Reviews | PE Power Review</title>
     <meta name="description" content="Independent, P.E.-stamped third-party reviews and compliance audits for ETAP, SKM PowerTools, and EasyPower arc flash and overcurrent coordination models.">
     <style>
-        :root {
-            --bg: #0f172a;
-            --surface: #1e293b;
-            --text: #f8fafc;
-            --muted: #94a3b8;
-            --accent: #38bdf8;
-            --border: #334155;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            margin: 0;
-            padding: 2rem 1rem;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        header {
-            margin-bottom: 3rem;
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 1.5rem;
-        }
-        h1 {
-            font-size: 2.25rem;
-            color: var(--text);
-            margin: 0 0 0.5rem 0;
-        }
-        .subtitle {
-            color: var(--accent);
-            font-size: 1.1rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        section {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.75rem;
-            margin-bottom: 2rem;
-        }
-        h2 {
-            font-size: 1.35rem;
-            color: var(--accent);
-            margin-top: 0;
-            margin-bottom: 1rem;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 0.5rem;
-        }
-        p {
-            margin: 0 0 1rem 0;
-            color: var(--text);
-        }
-        strong.takeaway {
-            display: block;
-            margin-top: 1rem;
-            padding: 0.75rem;
-            background: var(--bg);
-            border-left: 4px solid var(--accent);
-            border-radius: 0 4px 4px 0;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.5rem 0;
-            font-size: 0.95rem;
-        }
-        th, td {
-            border: 1px solid var(--border);
-            padding: 0.75rem;
-            text-align: left;
-        }
-        th {
-            background-color: var(--bg);
-            color: var(--accent);
-        }
-        footer {
-            text-align: center;
-            margin-top: 4rem;
-            color: var(--muted);
-            font-size: 0.875rem;
-        }
+        :root { --bg: #0f172a; --surface: #1e293b; --text: #f8fafc; --muted: #94a3b8; --accent: #38bdf8; --border: #334155; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; margin: 0; padding: 2rem 1rem; }
+        .container { max-width: 800px; margin: 0 auto; }
+        header { margin-bottom: 3rem; border-bottom: 2px solid var(--border); padding-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+        h1 { font-size: 2.25rem; margin: 0; }
+        nav a { color: var(--text); text-decoration: none; margin-left: 1.5rem; font-weight: 500; font-size: 0.95rem; }
+        nav a:hover, nav a.active { color: var(--accent); }
+        .subtitle { color: var(--accent); font-size: 1.1rem; font-weight: 600; text-transform: uppercase; margin-top: 0.25rem; }
+        section { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 1.75rem; margin-bottom: 2rem; }
+        h2 { font-size: 1.35rem; color: var(--accent); margin-top: 0; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+        p { margin: 0 0 1rem 0; }
+        footer { text-align: center; margin-top: 4rem; color: var(--muted); font-size: 0.875rem; }
     </style>
 </head>
 <body>
-
 <div class="container">
     <header>
-        <h1>PE Power Review</h1>
-        <div class="subtitle">Independent Third-Party Power System Audits</div>
+        <div>
+            <h1>PE Power Review</h1>
+            <div class="subtitle">Independent Engineering Verification</div>
+        </div>
+        <nav>
+            <a href="/" class="active">Home</a>
+            <a href="/process/">Our Process</a>
+            <a href="/studies/">Full Studies</a>
+        </nav>
     </header>
-
     <main>
-        <!-- BLOCK 1: Core Service Intent -->
         <section>
             <h2>Who can perform an independent 3rd-party peer review on an arc flash study?</h2>
             <p>Independent third-party peer reviews on arc flash and power system studies must be performed by a licensed Professional Engineer (P.E.) who is entirely disconnected from the original design or installation team. PE Power Review provides these independent compliance audits, delivering uncompromised engineering verification to satisfy municipal building officials, insurance underwriters, and facility owner mandates.</p>
         </section>
-
-        <!-- BLOCK 2: Extraction Table -->
         <section>
-            <h2>Which electrical simulation software engines can be audited?</h2>
-            <p>We provide comprehensive data extraction and validation across all primary industrial simulation environments. The model platform scope includes:</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Simulation Platform</th>
-                        <th>Primary Audit Focus</th>
-                        <th>Compliance Verification Standard</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>SKM PowerTools</strong></td>
-                        <td>Sub-station component validation</td>
-                        <td>IEEE 1584-2018 Incident Energy Calculations</td>
-                    </tr>
-                    <tr>
-                        <td><strong>ETAP</strong></td>
-                        <td>Dynamic transient & overcurrent relay settings</td>
-                        <td>NEC Article 240 Coordination & Protection</td>
-                    </tr>
-                    <tr>
-                        <td><strong>EasyPower</strong></td>
-                        <td>Industrial MCC layout & labeling accuracy</td>
-                        <td>OSHA 1910.303 Safety Regulations</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- BLOCK 3: Software Database Auditing -->
-        <section>
-            <h2>How are ETAP, SKM PowerTools, and EasyPower models verified during a third-party review?</h2>
-            <p>We verify engineering simulation models by extracting the raw native files (.PRW for SKM, .OTW for ETAP) and independently auditing the underlying software database assumptions. Rather than just reviewing the final output reports, our review explicitly cross-references the component manager settings against manufacturer datasheets to catch over-conservative or dangerously miscalculated boundary conditions.</p>
-        </section>
-
-        <!-- BLOCK 4: Fault Current Verification -->
-        <section>
-            <h2>How does a third-party engineering review validate available fault current data?</h2>
-            <p>We audit the model’s incoming utility source data to ensure the short-circuit calculations are structurally sound. We cross-reference the software's utility component configuration against official, dated written documentation from the local electrical utility provider, verifying that the maximum and minimum available short-circuit currents and X/R ratios reflect the actual physical point of common coupling rather than a generic infinite bus assumption.</p>
-            <strong class="takeaway">The key takeaway is: Verifying utility source variations ensures that the overcurrent protective device coordination remains functional under both maximum and minimum fault conditions.</strong>
-        </section>
-
-        <!-- BLOCK 5: Breaker Clearing Times & TCC Curves -->
-        <section>
-            <h2>How does a peer review evaluate circuit breaker clearing times and TCC curves?</h2>
-            <p>We evaluate clearing times by plotting custom Time-Current Characteristic (TCC) curves for every upstream protective device and main breaker within the model. Our review verifies that the original engineer did not blindly default to the arbitrary IEEE 1584 2-second clearing time rule on main lugs without confirming that real-world physical containment, relay settings, and maintenance switch options (such as ERMS) support safe worker evacuation.</p>
-        </section>
-
-        <!-- BLOCK 6: Conductor Parameter Auditing -->
-        <section>
-            <h2>How do you audit physical conductor parameters in an electrical simulation model?</h2>
-            <p>We audit conductor parameters by systematically checking the digital cable libraries embedded in the model against actual as-built physical electrical drawings. Our review ensures that cable lengths, conductor counts per phase, material types (copper versus aluminum), and magnetic conduit properties are accurate, as minor real-world variances drastically alter system impedance, change calculated fault currents, and alter protective device trip speeds.</p>
+            <h2>Why is an independent engineering review required for power system models?</h2>
+            <p>An independent engineering review isolates the project owner and prime contractor from engineering liability while verifying system safety parameters. Municipal permitting authorities, utility compliance boards, and mission-critical project specifications regularly mandate a third-party P.E. audit to ensure that design deliverables match physical site constraints before electrical infrastructure is energized.</p>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2026 PE Power Review. Independent Professional Engineering Verification.</p>
-    </footer>
+    <footer><p>&copy; 2026 PE Power Review. Independent Professional Engineering Verification.</p></footer>
 </div>
-
+</body>
+</html>
 </body>
 </html>
