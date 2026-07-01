@@ -7,169 +7,310 @@
     <meta name="description" content="Independent, P.E.-stamped third-party reviews and compliance audits for ETAP, SKM PowerTools, and EasyPower arc flash and overcurrent coordination models.">
     <style>
         :root { 
-            --bg: #0b0f19; 
-            --surface: #111827; 
-            --text: #f9fafb; 
-            --muted: #9ca3af; 
-            --accent: #38bdf8; 
-            --border: #1f2937; 
-            --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            --bg: #ffffff; 
+            --surface: #f8fafc; 
+            --text-main: #0f172a; 
+            --text-muted: #475569; 
+            --nav-bg: #1e293b; 
+            --nav-text: #f8fafc;
+            --accent: #0284c7; 
+            --border: #e2e8f0; 
+            --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
         }
         
-        * { box-sizing: border-box; }
+        * { 
+            box-sizing: border-box; 
+            border-radius: 0 !important; /* Forces strict, sharp geometric edges—no bubbly corners */
+        }
 
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
             background-color: var(--bg); 
-            color: var(--text); 
-            line-height: 1.5; 
+            color: var(--text-main); 
+            line-height: 1.6; 
             margin: 0; 
             padding: 0;
             -webkit-font-smoothing: antialiased;
         }
 
-        .container { 
-            max-width: 760px; 
-            margin: 0 auto; 
-            padding: 2rem 1.25rem;
-        }
-
-        header { 
-            margin-bottom: 4rem; 
-            border-bottom: 1px solid var(--border); 
-            padding-bottom: 2rem; 
-            display: flex; 
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-
-        /* Standard Top Navbar Layout */
-        .header-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        h1 { 
-            font-size: 1.75rem; 
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            margin: 0; 
-        }
-
-        nav {
-            display: flex;
-            gap: 1.25rem;
-        }
-
-        nav a { 
-            color: var(--muted); 
-            text-decoration: none; 
-            font-size: 0.9rem; 
-            font-weight: 500;
-            white-space: nowrap;
-            transition: color 0.15s ease;
-        }
-
-        nav a:hover { color: var(--text); }
-        nav a.active { 
-            color: var(--accent); 
-            font-weight: 600;
-        }
-
-        .subtitle { 
-            font-family: var(--mono);
-            color: var(--muted); 
-            font-size: 0.85rem; 
-            text-transform: uppercase; 
-            letter-spacing: 0.05em;
-        }
-
-        /* Clean Content Blocks */
-        section { 
-            margin-bottom: 3.5rem; 
-        }
-
-        h2 { 
-            font-size: 1.2rem; 
-            font-weight: 600;
-            color: var(--text); 
-            margin-top: 0; 
-            margin-bottom: 1rem; 
-            letter-spacing: -0.01em;
-        }
-
-        p { 
-            margin: 0 0 1.25rem 0; 
-            color: #d1d5db;
-            font-size: 0.975rem;
-        }
-
-        /* Subtle technical highlight */
-        .tech-label {
+        /* 1. Top Utility Bar */
+        .utility-bar {
+            background-color: #f1f5f9;
+            border-bottom: 1px solid var(--border);
+            padding: 0.5rem 1rem;
             font-family: var(--mono);
             font-size: 0.75rem;
-            color: var(--accent);
-            background: rgba(56, 189, 248, 0.1);
-            padding: 0.2rem 0.5rem;
-            border-radius: 3px;
-            display: inline-block;
-            margin-bottom: 0.5rem;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .utility-bar div span {
+            margin-right: 1.5rem;
         }
 
-        footer { 
-            text-align: left; 
-            margin-top: 6rem; 
-            border-top: 1px solid var(--border);
-            padding-top: 1.5rem;
-            color: var(--muted); 
+        /* 2. Centered Brand Header */
+        .brand-header {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            background-color: var(--bg);
+        }
+        .brand-header h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .brand-header .tagline {
             font-family: var(--mono);
-            font-size: 0.75rem; 
+            font-size: 0.85rem;
+            color: var(--accent);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-top: 0.5rem;
         }
 
-        /* Responsive adaptation for mobile screens */
-        @media (max-width: 480px) {
-            header { margin-bottom: 2.5rem; padding-bottom: 1.5rem; }
-            .header-top { flex-direction: column; gap: 1rem; align-items: flex-start; }
-            nav { gap: 1rem; width: 100%; border-top: 1px solid var(--border); padding-top: 1rem; }
-            nav a { font-size: 0.85rem; }
-            h1 { font-size: 1.5rem; }
+        /* 3. Solid Horizontal Nav Bar */
+        .nav-bar {
+            background-color: var(--nav-bg);
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            width: 100%;
+            max-width: 1100px;
+            display: flex;
+            justify-content: center;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: var(--nav-text);
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: background-color 0.15s ease;
+        }
+        nav a:hover {
+            background-color: #334155;
+        }
+        nav a.active {
+            background-color: var(--accent);
+        }
+
+        /* Main Structural Framework */
+        .main-wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .intro-section {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem auto;
+        }
+        .intro-section h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.25rem;
+        }
+        .intro-section p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        /* 4. 4-Column Capabilities Grid */
+        .capabilities-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+        .capability-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.15s ease, border-color 0.15s ease;
+        }
+        .capability-card:hover {
+            border-color: var(--accent);
+        }
+        .image-placeholder {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            background-color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--mono);
+            font-size: 0.8rem;
+            color: #94a3b8;
+            border-bottom: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+        /* Temporary background styles until you replace src with real images */
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-title {
+            padding: 1.25rem;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            background: #ffffff;
+            color: var(--text-main);
+            margin: 0;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top: 1px solid var(--border);
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 2rem 0;
+            text-align: center;
+            font-family: var(--mono);
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 6rem;
+        }
+
+        /* Responsive Layout Rules */
+        @media (max-width: 900px) {
+            .capabilities-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 550px) {
+            .capabilities-grid {
+                grid-template-columns: 1fr;
+            }
+            .utility-bar {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .utility-bar div span {
+                margin: 0 0.5rem;
+            }
+            nav {
+                width: 100%;
+                flex-direction: column;
+            }
+            nav a {
+                text-align: center;
+                padding: 0.75rem;
+                border-bottom: 1px solid #334155;
+            }
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <header>
-        <div class="header-top">
-            <h1>PE Power Review</h1>
+
+    <!-- 1. Top Utility Bar -->
+    <div class="utility-bar">
+        <div>
+            <span>REGISTRATION: OHIO & KENTUCKY LICENSED P.E.</span>
+        </div>
+        <div>
+            <span>EMAIL: PROJECTS@PEPOWERREVIEW.COM</span>
+        </div>
+    </div>
+
+    <!-- 2. Centered Brand Header -->
+    <div class="brand-header">
+        <h1>PE Power Review</h1>
+        <div class="tagline">Independent Third-Party Power System Audits</div>
+    </div>
+
+    <!-- 3. Solid Horizontal Nav Bar -->
+    <div class="nav-bar">
+        <div class="nav-container">
             <nav>
                 <a href="/" class="active">Home</a>
                 <a href="/process/">Our Process</a>
                 <a href="/studies/">Full Studies</a>
             </nav>
         </div>
-        <div class="subtitle">Independent Engineering Verification</div>
-    </header>
+    </div>
 
-    <main>
-        <section>
-            <div class="tech-label">COMPLIANCE REVIEW</div>
-            <h2>Who can perform an independent 3rd-party peer review on an arc flash study?</h2>
-            <p>Independent third-party peer reviews on arc flash and power system studies must be performed by a licensed Professional Engineer (P.E.) who is entirely disconnected from the original design or installation team. PE Power Review provides these independent compliance audits, delivering uncompromised engineering verification to satisfy municipal building officials, insurance underwriters, and facility owner mandates.</p>
-        </section>
+    <!-- Main Structural Content Block -->
+    <div class="main-wrapper">
+        
+        <div class="intro-section">
+            <h2>Independent Verification of Electrical Simulation Models</h2>
+            <p>Providing specialized engineering verification and compliance reviews across major modeling environments. We serve as an isolated layer of technical accountability to satisfy insurance requirements, municipal mandates, and facility specifications.</p>
+        </div>
 
-        <section>
-            <div class="tech-label">RISK MITIGATION</div>
-            <h2>Why is an independent engineering review required for power system models?</h2>
-            <p>An independent engineering review isolates the project owner and prime contractor from engineering liability while verifying system safety parameters. Municipal permitting authorities, utility compliance boards, and mission-critical project specifications regularly mandate a third-party P.E. audit to ensure that design deliverables match physical site constraints before electrical infrastructure is energized.</p>
-        </section>
-    </main>
+        <!-- 4. 4-Column Capabilities Grid (Matching image_9ee3b7.jpg layout) -->
+        <div class="capabilities-grid">
+            
+            <!-- Card 1 -->
+            <div class="capability-card">
+                <div class="image-placeholder">
+                    <!-- Swap out the src attribute below with your real image files later -->
+                    <!-- <img src="peer-review.jpg" alt="3rd Party Peer Review"> -->
+                    [ 3rd-Party Peer Review Image ]
+                </div>
+                <h3 class="card-title">3rd-Party Peer Review</h3>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="capability-card">
+                <div class="image-placeholder">
+                    <!-- <img src="arc-flash.jpg" alt="Arc Flash Evaluation"> -->
+                    [ Arc Flash Evaluation Image ]
+                </div>
+                <h3 class="card-title">Arc Flash Hazard</h3>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="capability-card">
+                <div class="image-placeholder">
+                    <!-- <img src="coordination.jpg" alt="Selective Coordination"> -->
+                    [ Overcurrent Coordination Image ]
+                </div>
+                <h3 class="card-title">Selective Coordination</h3>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="capability-card">
+                <div class="image-placeholder">
+                    <!-- <img src="short-circuit.jpg" alt="Short Circuit Analysis"> -->
+                    [ Short-Circuit Analysis Image ]
+                </div>
+                <h3 class="card-title">Short-Circuit Analysis</h3>
+            </div>
+
+        </div>
+
+    </div>
 
     <footer>
-        <div>&copy; 2026 PE Power Review. Ohio & Kentucky Licensed P.E. Services.</div>
+        <div class="main-wrapper" style="padding: 0 1.5rem;">
+            &copy; 2026 PE Power Review. Professional Engineering Verification Services. All rights reserved.
+        </div>
     </footer>
-</div>
+
 </body>
 </html>
