@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fosco Engineering | Independent Power Systems Engineering</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -25,7 +24,6 @@
             }
         }
     </script>
-    <!-- Google Fonts for Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -35,15 +33,12 @@
 </head>
 <body class="bg-white text-brand-dark antialiased">
 
-    <!-- NAVIGATION -->
     <header class="sticky top-0 z-50 bg-white text-brand-dark border-b border-gray-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- Brand Logo with AC Symbol -->
             <a href="#" class="flex flex-col justify-center">
                 <div class="flex items-center space-x-1.5 tracking-wider font-bold text-3xl text-brand-dark">
                     <span>F</span>
                     <span class="relative flex items-center justify-center w-8 h-8 rounded-full border-2 border-brand-accent mx-0.5">
-                        <!-- Custom Inline SVG AC Sine Wave Symbol in Crisp Mint -->
                         <svg class="w-5 h-5 text-brand-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 12c3-6 3 6 6 0s3-6 6 0 3 6 6 0" />
                         </svg>
@@ -61,10 +56,8 @@
         </div>
     </header>
 
-    <!-- HERO SECTION (Crisp Premium Canvas) -->
     <section class="relative bg-white text-brand-dark py-24 lg:py-32 overflow-hidden border-b border-gray-100">
-        <!-- Subtle grid system for an engineered texture -->
-        <div class="absolute inset-0 bg-[linear-gradient(to_right,#10b98108_1px,transparent_1px),linear-gradient(to_bottom,#10b98108_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#10b9810c_1px,transparent_1px),linear-gradient(to_bottom,#10b9810c_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
         <div class="relative max-w-7xl mx-auto px-6 text-center">
             <span class="inline-block text-xs uppercase tracking-[0.25em] font-extrabold text-brand-accent mb-4 bg-emerald-50 px-3 py-1 rounded-full">Independent Power Systems Engineering</span>
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight max-w-4xl mx-auto leading-tight text-brand-dark">
@@ -84,64 +77,62 @@
         </div>
     </section>
 
-    <!-- CORE CAPABILITIES -->
-    <section id="capabilities" class="py-24 max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-xs uppercase tracking-[0.3em] text-brand-accent font-bold mb-3">Capabilities</h2>
-            <p class="text-3xl font-extrabold tracking-tight text-brand-dark">Engineered Infrastructure Services</p>
-        </div>
-
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-            <!-- Column 1: Auditing -->
-            <div class="bg-white p-8 lg:p-10 rounded-xl border border-gray-200/80 shadow-sm hover:shadow-md transition">
-                <div class="text-xs font-mono text-brand-accent font-bold mb-4">01 / LIABILITY FILTER</div>
-                <h3 class="text-2xl font-bold text-brand-dark mb-4">Third-Party Review & Auditing</h3>
-                <p class="text-emerald-900/70 leading-relaxed mb-6">
-                    Acting as an unbiased, independent engineering authority to de-risk your projects. We provide rigorous quality control and technical oversight for existing models to ensure complete compliance.
-                </p>
-                <ul class="space-y-3 border-t border-gray-100 pt-6">
-                    <li class="flex items-start text-sm text-brand-dark font-medium">
-                        <span class="text-brand-accent font-bold mr-3">•</span> Model & Boundary Verification
-                    </li>
-                    <li class="flex items-start text-sm text-brand-dark font-medium">
-                        <span class="text-brand-accent font-bold mr-3">•</span> Discrepancy Identification & Reports
-                    </li>
-                    <li class="flex items-start text-sm text-brand-dark font-medium">
-                        <span class="text-brand-accent font-bold mr-3">•</span> Peer Reviews & Professional Witness
-                    </li>
-                    <li class="flex items-start text-sm text-brand-dark font-medium">
-                        <span class="text-brand-accent font-bold mr-3">•</span> Compliance Auditing (NFPA 70E / IEEE)
-                    </li>
-                </ul>
+    <section id="capabilities" class="bg-brand-light py-24 border-b border-emerald-900/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-xs uppercase tracking-[0.3em] text-brand-accent font-bold mb-3">Capabilities</h2>
+                <p class="text-3xl font-extrabold tracking-tight text-brand-dark">Engineered Infrastructure Services</p>
             </div>
 
-            <!-- Column 2: Studies -->
-            <div class="bg-white p-8 lg:p-10 rounded-xl border border-gray-200/80 shadow-sm hover:shadow-md transition">
-                <div class="text-xs font-mono text-brand-accent font-bold mb-4">02 / MODEL GENERATION</div>
-                <h3 class="text-2xl font-bold text-brand-dark mb-4">Power System Modeling & Analysis</h3>
-                <p class="text-emerald-900/70 leading-relaxed mb-6">
-                    From-scratch generation of comprehensive power system studies. We build, simulate, and optimize complex electrical models to protect personnel and ensure operational reliability.
-                </p>
-                <ul class="space-y-3 border-t border-gray-100 pt-6">
-                    <li class="flex items-start text-sm text-brand-dark font-medium">
-                        <span class="text-brand-accent font-bold mr-3">•</span> Arc Flash Hazard Analysis
-                    </li>
-                    <li class="flex items-start text-sm text-brand-dark font-medium">
-                        <span class="text-brand-accent font-bold mr-3">•</span> Overcurrent Protective Device Coordination
-                    </li>
-                    <li class="flex items-start text-sm text-brand-dark font-medium">
-                        <span class="text-brand-accent font-bold mr-3">•</span> Short Circuit Calculations
-                    </li>
-                    <li class="flex items-start text-sm text-brand-dark font-medium">
-                        <span class="text-brand-accent font-bold mr-3">•</span> Equipment Evaluation & Compliance
-                    </li>
-                </ul>
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                <div class="bg-white p-8 lg:p-10 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="text-xs font-mono text-brand-accent font-bold mb-4">01 / LIABILITY FILTER</div>
+                    <h3 class="text-2xl font-bold text-brand-dark mb-4">Third-Party Review & Auditing</h3>
+                    <p class="text-emerald-900/70 leading-relaxed mb-6">
+                        Acting as an unbiased, independent engineering authority to de-risk your projects. We provide rigorous quality control and technical oversight for existing models to ensure complete compliance.
+                    </p>
+                    <ul class="space-y-3 border-t border-gray-100 pt-6">
+                        <li class="flex items-start text-sm text-brand-dark font-medium">
+                            <span class="text-brand-accent font-bold mr-3">•</span> Model & Boundary Verification
+                        </li>
+                        <li class="flex items-start text-sm text-brand-dark font-medium">
+                            <span class="text-brand-accent font-bold mr-3">•</span> Discrepancy Identification & Reports
+                        </li>
+                        <li class="flex items-start text-sm text-brand-dark font-medium">
+                            <span class="text-brand-accent font-bold mr-3">•</span> Peer Reviews & Professional Witness
+                        </li>
+                        <li class="flex items-start text-sm text-brand-dark font-medium">
+                            <span class="text-brand-accent font-bold mr-3">•</span> Compliance Auditing (NFPA 70E / IEEE)
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 lg:p-10 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="text-xs font-mono text-brand-accent font-bold mb-4">02 / MODEL GENERATION</div>
+                    <h3 class="text-2xl font-bold text-brand-dark mb-4">Power System Modeling & Analysis</h3>
+                    <p class="text-emerald-900/70 leading-relaxed mb-6">
+                        From-scratch generation of comprehensive power system studies. We build, simulate, and optimize complex electrical models to protect personnel and ensure operational reliability.
+                    </p>
+                    <ul class="space-y-3 border-t border-gray-100 pt-6">
+                        <li class="flex items-start text-sm text-brand-dark font-medium">
+                            <span class="text-brand-accent font-bold mr-3">•</span> Arc Flash Hazard Analysis
+                        </li>
+                        <li class="flex items-start text-sm text-brand-dark font-medium">
+                            <span class="text-brand-accent font-bold mr-3">•</span> Overcurrent Protective Device Coordination
+                        </li>
+                        <li class="flex items-start text-sm text-brand-dark font-medium">
+                            <span class="text-brand-accent font-bold mr-3">•</span> Short Circuit Calculations
+                        </li>
+                        <li class="flex items-start text-sm text-brand-dark font-medium">
+                            <span class="text-brand-accent font-bold mr-3">•</span> Equipment Evaluation & Compliance
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- THE FRAMEWORK OF TRUST (Alternating Clean Mint Tint Canvas) -->
-    <section id="trust" class="bg-brand-light py-24 border-t border-b border-emerald-900/5">
+    <section id="trust" class="bg-white py-24 border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-6">
             <div class="mb-16">
                 <h2 class="text-xs uppercase tracking-[0.3em] text-brand-accent font-bold mb-3">The Standard of Certainty</h2>
@@ -150,19 +141,19 @@
 
             <div class="grid md:grid-cols-3 gap-10">
                 <div class="space-y-3">
-                    <h4 class="text-lg font-bold text-brand-dark">Unbiased Peer Review</h4>
+                    <h4 class="text-lg font-bold text-brand-dark border-b border-emerald-100 pb-2">Unbiased Peer Review</h4>
                     <p class="text-sm text-emerald-900/70 leading-relaxed">
                         We do not have a hidden agenda to upsell you on massive equipment overhauls or construction contracts. Our third-party reviews provide an objective, transparent assessment of your power system's true compliance posture.
                     </p>
                 </div>
                 <div class="space-y-3">
-                    <h4 class="text-lg font-bold text-brand-dark">Licensed P.E. Oversight</h4>
+                    <h4 class="text-lg font-bold text-brand-dark border-b border-emerald-100 pb-2">Licensed P.E. Oversight</h4>
                     <p class="text-sm text-emerald-900/70 leading-relaxed">
                         Every audit, study, and report is executed and verified directly by a licensed Professional Engineer. We deliver institutional-grade engineering depth with the responsiveness of an agile, dedicated specialist.
                     </p>
                 </div>
                 <div class="space-y-3">
-                    <h4 class="text-lg font-bold text-brand-dark">Rigorous Compliance</h4>
+                    <h4 class="text-lg font-bold text-brand-dark border-b border-emerald-100 pb-2">Rigorous Compliance</h4>
                     <p class="text-sm text-emerald-900/70 leading-relaxed">
                         We benchmark all incoming model data against the latest IEEE standards and NFPA 70E compliance frameworks, ensuring your facilities, operations personnel, and corporate liability profiles are completely insulated.
                     </p>
@@ -171,65 +162,65 @@
         </div>
     </section>
 
-    <!-- THE INTAKE SECTION (CTA FORM) -->
-    <section id="intake" class="py-24 max-w-4xl mx-auto px-6">
-        <div class="bg-white border border-gray-200 shadow-xl rounded-xl p-8 md:p-12">
-            <div class="text-center mb-10">
-                <h3 class="text-2xl font-bold tracking-tight text-brand-dark mb-2">Initiate a Project Review</h3>
-                <p class="text-sm text-emerald-900/50">Ready to validate an existing study or scope a new power system model? Securely submit your technical details below.</p>
+    <section id="intake" class="bg-brand-light py-24 border-b border-emerald-900/5">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-white border border-gray-200/80 shadow-xl rounded-xl p-8 md:p-12">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl font-bold tracking-tight text-brand-dark mb-2">Initiate a Project Review</h3>
+                    <p class="text-sm text-emerald-900/50">Ready to validate an existing study or scope a new power system model? Securely submit your technical details below.</p>
+                </div>
+
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase font-bold tracking-wider text-emerald-900/60 mb-2">Contact Name</label>
+                            <input type="text" required class="w-full bg-brand-light border border-gray-200 rounded px-4 py-3 text-sm text-brand-dark focus:outline-none focus:border-brand-accent transition">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase font-bold tracking-wider text-emerald-900/60 mb-2">Corporate Entity</label>
+                            <input type="text" required class="w-full bg-brand-light border border-gray-200 rounded px-4 py-3 text-sm text-brand-dark focus:outline-none focus:border-brand-accent transition">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase font-bold tracking-wider text-emerald-900/60 mb-2">Engagement Scope</label>
+                        <select class="w-full bg-brand-light border border-gray-200 rounded px-4 py-3 text-sm text-brand-dark focus:outline-none focus:border-brand-accent transition font-medium">
+                            <option>Third-Party Compliance Review / Audit</option>
+                            <option>Full Power System Study (From Scratch)</option>
+                            <option>Other Technical Consultation</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase font-bold tracking-wider text-emerald-900/60 mb-2">Secure Technical File Drop</label>
+                        <div class="w-full border-2 border-dashed border-gray-200 bg-brand-light hover:bg-emerald-50/50 hover:border-brand-accent transition rounded-lg p-8 flex flex-col items-center justify-center cursor-pointer">
+                            <svg class="w-8 h-8 text-emerald-800/40 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                            </svg>
+                            <p class="text-xs font-bold text-emerald-900/70">Drag & drop or click to upload project files</p>
+                            <p class="text-[10px] text-emerald-900/40 mt-1 font-medium">Accepts SKM, ETAP, or engineering PDFs</p>
+                            <input type="file" class="hidden">
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-brand-dark hover:bg-emerald-950 text-white font-bold text-sm uppercase tracking-wider py-4 rounded transition shadow-md">
+                            Submit Technical Request
+                        </button>
+                    </div>
+                </form>
             </div>
-
-            <form action="#" method="POST" class="space-y-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-xs uppercase font-bold tracking-wider text-emerald-900/60 mb-2">Contact Name</label>
-                        <input type="text" required class="w-full bg-brand-light border border-gray-200 rounded px-4 py-3 text-sm text-brand-dark focus:outline-none focus:border-brand-accent transition">
-                    </div>
-                    <div>
-                        <label class="block text-xs uppercase font-bold tracking-wider text-emerald-900/60 mb-2">Corporate Entity</label>
-                        <input type="text" required class="w-full bg-brand-light border border-gray-200 rounded px-4 py-3 text-sm text-brand-dark focus:outline-none focus:border-brand-accent transition">
-                    </div>
-                </div>
-
-                <div>
-                    <label class="block text-xs uppercase font-bold tracking-wider text-emerald-900/60 mb-2">Engagement Scope</label>
-                    <select class="w-full bg-brand-light border border-gray-200 rounded px-4 py-3 text-sm text-brand-dark focus:outline-none focus:border-brand-accent transition font-medium">
-                        <option>Third-Party Compliance Review / Audit</option>
-                        <option>Full Power System Study (From Scratch)</option>
-                        <option>Other Technical Consultation</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label class="block text-xs uppercase font-bold tracking-wider text-emerald-900/60 mb-2">Secure Technical File Drop</label>
-                    <div class="w-full border-2 border-dashed border-gray-200 bg-brand-light hover:bg-emerald-50 hover:border-brand-accent transition rounded-lg p-8 flex flex-col items-center justify-center cursor-pointer">
-                        <svg class="w-8 h-8 text-emerald-800/40 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                        </svg>
-                        <p class="text-xs font-bold text-emerald-900/70">Drag & drop or click to upload project files</p>
-                        <p class="text-[10px] text-emerald-900/40 mt-1 font-medium">Accepts SKM, ETAP, or engineering PDFs</p>
-                        <input type="file" class="hidden">
-                    </div>
-                </div>
-
-                <div class="pt-4">
-                    <button type="submit" class="w-full bg-brand-dark hover:bg-emerald-950 text-white font-bold text-sm uppercase tracking-wider py-4 rounded transition shadow-md">
-                        Submit Technical Request
-                    </button>
-                </div>
-            </form>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-brand-dark text-emerald-100/50 text-xs py-12">
+    <footer class="bg-brand-dark text-emerald-100/60 text-xs py-16">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
-                <p class="font-extrabold text-white tracking-wide text-sm mb-1">FOSCO ENGINEERING</p>
+                <p class="font-extrabold text-white tracking-widest text-base mb-1">FOSCO ENGINEERING</p>
                 <p>&copy; 2026 Fosco Engineering LLC. All rights reserved.</p>
             </div>
-            <div class="text-center md:text-right text-[11px] text-emerald-100/30 font-medium">
-                All engineering deliverables executed, validated, and sealed by a licensed Professional Engineer.
+            <div class="text-center md:text-right text-[11px] text-emerald-100/40 font-medium max-w-md">
+                All technical deliverables executed, validated, and sealed directly by a licensed Professional Engineer.
             </div>
         </div>
     </footer>
