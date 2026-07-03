@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fosco Engineering | Power Systems Engineering</title>
+    <title>Fosco Engineering | Arc Flash Studies &amp; Third-Party Review</title>
+    <meta name="description" content="Fosco Engineering provides arc flash studies, protective device coordination, short circuit analysis, and independent third-party engineering review &mdash; performed directly by a licensed Professional Engineer for industrial and commercial facilities nationwide.">
+    <meta name="keywords" content="arc flash study, third-party engineering review, protective device coordination, short circuit analysis, NFPA 70E, IEEE 1584, power systems engineer">
+    <meta property="og:title" content="Fosco Engineering | Arc Flash Studies & Third-Party Review">
+    <meta property="og:description" content="Independent arc flash studies and third-party engineering review, performed directly by a licensed Professional Engineer.">
+    <meta property="og:type" content="website">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -124,7 +129,7 @@
 
             <!-- Founder Bio Block -->
             <div class="mb-16 md:mb-20 bg-brand-light rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
-                <img src="https://placehold.co/200x200/0A2F25/F4F7F6?text=Photo" alt="[Your Name], PE" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-md shrink-0">
+                <img src="images/mitch-fosco-headshot.jpg" alt="Mitch Fosco, PE" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-md shrink-0">
                 <div class="text-center md:text-left">
                     <h3 class="text-2xl md:text-3xl font-extrabold text-brand-dark mb-1">[Your Name], PE</h3>
                     <p class="text-sm uppercase tracking-wider text-brand-hover font-bold mb-4">Founder &amp; Principal Engineer &middot; Licensed in Ohio, Kentucky &amp; California</p>
@@ -270,12 +275,12 @@
     <section id="intake" class="bg-brand-light py-20 md:py-32 border-b border-emerald-900/5 w-full">
         <div class="max-w-4xl mx-auto px-6">
             <div class="bg-white border border-gray-200 shadow-xl rounded-xl p-6 md:p-12">
-                <div class="text-center mb-8 md:mb-10">
+                <div id="intake-form-header" class="text-center mb-8 md:mb-10">
                     <h3 class="text-xl md:text-2xl font-bold tracking-tight text-brand-dark mb-2"><u>Request a Consultation</u></h3>
                     <p class="text-xs md:text-sm text-emerald-900/50">Securely submit your technical details to get started.</p>
                 </div>
 
-                <form action="https://formspree.io/f/mbdvabpd" method="POST" class="space-y-6">
+                <form id="intake-form" action="https://formspree.io/f/mbdvabpd" method="POST" class="space-y-6">
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Contact Name <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
@@ -337,15 +342,69 @@
 
                     
 
+                    <div id="intake-form-error" class="hidden text-sm text-red-600 font-semibold text-center"></div>
+
                     <div class="pt-4">
-                        <button type="submit" class="w-full bg-brand-accent hover:bg-brand-hover text-black md:text-brand-dark font-extrabold text-xs md:text-sm uppercase tracking-wider py-4 rounded transition shadow-md hover:shadow-lg">
+                        <button type="submit" id="intake-submit-btn" class="w-full bg-brand-accent hover:bg-brand-hover text-black md:text-brand-dark font-extrabold text-xs md:text-sm uppercase tracking-wider py-4 rounded transition shadow-md hover:shadow-lg">
                             Submit Technical Request
                         </button>
                     </div>
                 </form>
+
+                <!-- Thank-you state, shown after successful submission -->
+                <div id="intake-thank-you" class="hidden text-center py-10">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-emerald-50 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-brand-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold tracking-tight text-brand-dark mb-3">Request Received</h3>
+                    <p class="text-sm md:text-base text-emerald-950/70 max-w-md mx-auto leading-relaxed">
+                        Thank you for reaching out to Fosco Engineering. We've received your project details and will be in touch shortly to discuss next steps.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
+
+    <script>
+        const intakeForm = document.getElementById('intake-form');
+        const intakeFormHeader = document.getElementById('intake-form-header');
+        const intakeThankYou = document.getElementById('intake-thank-you');
+        const intakeSubmitBtn = document.getElementById('intake-submit-btn');
+        const intakeFormError = document.getElementById('intake-form-error');
+
+        intakeForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            intakeFormError.classList.add('hidden');
+            intakeSubmitBtn.disabled = true;
+            intakeSubmitBtn.textContent = 'Submitting…';
+
+            try {
+                const response = await fetch(intakeForm.action, {
+                    method: 'POST',
+                    body: new FormData(intakeForm),
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    intakeForm.classList.add('hidden');
+                    intakeFormHeader.classList.add('hidden');
+                    intakeThankYou.classList.remove('hidden');
+                } else {
+                    intakeFormError.textContent = "Something went wrong submitting your request. Please try again or email us directly.";
+                    intakeFormError.classList.remove('hidden');
+                    intakeSubmitBtn.disabled = false;
+                    intakeSubmitBtn.textContent = 'Submit Technical Request';
+                }
+            } catch (err) {
+                intakeFormError.textContent = "Something went wrong submitting your request. Please try again or email us directly.";
+                intakeFormError.classList.remove('hidden');
+                intakeSubmitBtn.disabled = false;
+                intakeSubmitBtn.textContent = 'Submit Technical Request';
+            }
+        });
+    </script>
 
     <footer class="bg-brand-dark text-emerald-100/60 text-xs py-12 md:py-16 w-full">
         <div class="w-full px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
@@ -354,7 +413,7 @@
                 <p>&copy; 2026 Fosco Engineering LLC. All rights reserved.</p>
             </div>
             <div class="text-center md:text-right text-[10px] md:text-[11px] text-emerald-100/40 font-medium max-w-md">
-                All technical deliverables are fully engineered, certified, and stamped directly by a licensed Professional Engineer.
+                All technical deliverables are fully engineered, certified, and stamped directly by a licensed Professional Engineer. Licensed in Ohio, Kentucky &amp; California.
             </div>
         </div>
     </footer>
