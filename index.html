@@ -85,17 +85,17 @@
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,rgba(255,255,255,0.6)100%)] pointer-events-none z-0"></div>
 
         <!-- Main Hero Text Content Wrapper -->
-        <div class="relative w-full px-5 sm:px-12 text-center my-auto z-10 flex flex-col justify-center items-center">
-            <h1 class="text-3xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-balance max-w-4xl mx-auto leading-[1.2] text-brand-dark">
-                Arc Flash Studies <br class="hidden sm:inline">&amp; Third-Party Review.
+        <div class="relative w-full px-4 sm:px-12 text-center my-auto z-10 flex flex-col justify-center items-center">
+            <!-- FIX: Completely removed text-balance to unlock full natural mobile width as requested by image_5.png -->
+            <h1 class="text-3xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-4xl mx-auto leading-[1.2] text-brand-dark">
+                Arc Flash Studies &amp; Third-Party Review
             </h1>
 
-            <!-- FIX: Removed text-balance to stop the narrow visual column squeeze shown in image_4.png -->
-            <p class="mt-5 md:mt-8 text-[15px] md:text-lg text-emerald-950/80 font-medium max-w-2xl mx-auto leading-relaxed px-1 text-pretty">
+            <p class="mt-5 md:mt-8 text-[15px] md:text-lg text-emerald-950/80 font-medium max-w-2xl mx-auto leading-relaxed">
                 Arc flash studies, power system analysis, and independent third-party review. Delivered with energized expertise by a licensed Professional Engineer.
             </p>
 
-            <div class="mt-10 md:mt-14 flex flex-col sm:flex-row justify-center items-center gap-3.5 md:gap-6 max-w-sm sm:max-w-none mx-auto w-full px-2">
+            <div class="mt-10 md:mt-14 flex flex-col sm:flex-row justify-center items-center gap-3.5 md:gap-6 max-w-sm sm:max-w-none mx-auto w-full">
                 <a href="#intake" class="w-full sm:w-auto bg-brand-accent hover:bg-brand-hover text-brand-dark font-extrabold text-[12px] md:text-sm uppercase tracking-wider px-6 md:px-10 py-4 rounded shadow-md hover:shadow-xl transition duration-150 text-center">
                     Request Technical Consultation
                 </a>
@@ -117,11 +117,12 @@
 
     <!-- Why Us Section -->
     <section id="trust" class="bg-white py-16 md:py-32 border-b border-gray-100 w-full">
-        <div class="w-full px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="w-full px-4 md:px-12 max-w-7xl mx-auto">
             <div class="mb-12 md:mb-20 text-center md:text-left">
                 <h2 class="text-xs uppercase tracking-[0.3em] text-brand-hover font-bold mb-3">Our Advantage</h2>
-                <p class="text-2xl sm:text-4xl font-extrabold tracking-tight text-brand-dark max-w-3xl text-balance leading-[1.25]">
-                    Direct access. No hand-offs. <br class="hidden sm:inline">Built on a decade of engineering rigor.
+                <!-- FIX: Removed text-balance and hard break to allow full span across mobile viewports -->
+                <p class="text-2xl sm:text-4xl font-extrabold tracking-tight text-brand-dark max-w-3xl leading-[1.25]">
+                    Direct access. No hand-offs. Built on a decade of engineering rigor.
                 </p>
             </div>
 
@@ -130,9 +131,8 @@
                 <img src="images/mitch-fosco-headshot.jpg" alt="Mitch Fosco, PE" class="w-28 h-28 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-md shrink-0">
                 <div class="text-center md:text-left">
                     <h3 class="text-xl md:text-3xl font-extrabold text-brand-dark mb-1">Mitch Fosco, PE</h3>
-                    <!-- FIX: Removed text-balance here as well to maximize readable layout width on mobile -->
                     <p class="text-xs md:text-sm uppercase tracking-wider text-brand-hover font-bold mb-4">Founder &amp; Principal Engineer &middot; Licensed in Ohio, Kentucky &amp; California</p>
-                    <p class="text-sm md:text-base text-emerald-950/80 leading-relaxed max-w-2xl text-pretty">
+                    <p class="text-sm md:text-base text-emerald-950/80 leading-relaxed max-w-2xl">
                         For more than a decade I've performed business-critical engineering studies for large-scale industrial and commercial facilities, from initial field data collection through final engineering report delivery. My experience includes Arc Flash, Short Circuit, and Protective Device Coordination studies using SKM and ETAP in accordance with NFPA 70E, IEEE 1584, and NEC standards. Because of this expertise, clients have asked me to perform third-party reviews of work completed by other firms.
                         <br><br>
                         I founded Fosco Engineering to provide the technical rigor and responsive communication that critical electrical systems demand. Every project is approached with a commitment to delivering accurate, practical engineering solutions that improve safety, enhance reliability, and give clients confidence in the systems they depend on.
@@ -149,7 +149,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                             </svg>
                         </div>
-                        <h4 class="text-lg md:text-xl font-bold text-brand-dark mb-3 text-balance">The Expert’s Expert</h4>
+                        <h4 class="text-lg md:text-xl font-bold text-brand-dark mb-3">The Expert’s Expert</h4>
                         <p class="text-sm text-emerald-950/80 leading-relaxed font-medium">
                             We build complex power system models and rigorously audit them. This continuous exposure to high-consequence design gives us the unique technical depth to perform meticulous third-party reviews. These reviews surface engineering oversights and protecting your facility from catastrophe.
                         </p>
@@ -164,7 +164,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 9h7.5m2.25 11.25v-13.5A2.25 2.25 0 0016.5 4.5h-9A2.25 2.25 0 005 6.75v13.5m14 0h-14m14 0a2.25 2.25 0 002.25-2.25V15M5 20.25a2.25 2.25 0 01-2.25-2.25V15m3 0h13.5" />
                             </svg>
                         </div>
-                        <h4 class="text-lg md:text-xl font-bold text-brand-dark mb-3 text-balance">Direct P.E. Engagement</h4>
+                        <h4 class="text-lg md:text-xl font-bold text-brand-dark mb-3">Direct P.E. Engagement</h4>
                         <p class="text-sm text-emerald-950/80 leading-relaxed font-medium">
                            High-impact power systems demand experienced execution. We eliminate the layers of bureaucracy typical of larger firms. From initial conversation to final deliverable, your project receives the direct, uninterrupted focus of a Professional Engineer who understands the full scope of your operational goals.
                         </p>
@@ -180,7 +180,7 @@
                                 <path fill="currentColor" stroke="none" d="M13 8.5l-3.5 5h2.5L11 18.5l4.5-6h-2.5L13 8.5z" />
                             </svg>
                         </div>
-                        <h4 class="text-lg md:text-xl font-bold text-brand-dark mb-3 text-balance">Uncompromised System Safety</h4>
+                        <h4 class="text-lg md:text-xl font-bold text-brand-dark mb-3">Uncompromised System Safety</h4>
                         <p class="text-sm text-emerald-950/80 leading-relaxed font-medium">
                             Our mission is to secure safety and operational reliability across your entire infrastructure. By matching engineering rigor with clear deliverables, we ensure your team can operate with absolute confidence and your facility is protected from electrical risk.
                         </p>
@@ -192,7 +192,7 @@
     
     <!-- Expertise Section -->
     <section id="capabilities" class="bg-brand-light py-16 md:py-32 border-b border-emerald-900/5 w-full">
-        <div class="w-full px-6 md:px-12">
+        <div class="w-full px-4 md:px-12">
             <div class="text-center mb-12 md:mb-24">
                 <h2 class="text-xs uppercase tracking-[0.3em] text-brand-hover font-bold mb-3">Expertise</h2>
                 <p class="text-2xl md:text-4xl font-extrabold tracking-tight text-brand-dark">Engineering Services</p>
@@ -201,7 +201,7 @@
             <div class="flex flex-col gap-8 max-w-5xl mx-auto">
                 <!-- Card 1 -->
                 <div class="bg-white p-5 md:p-12 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
-                    <h3 class="flex items-center gap-3 text-lg md:text-2xl font-black text-brand-dark mb-5 text-balance">
+                    <h3 class="flex items-center gap-3 text-lg md:text-2xl font-black text-brand-dark mb-5">
                         <span class="w-1.5 h-5 md:h-7 bg-brand-accent rounded-full"></span>
                         Third-Party Engineering Reviews
                     </h3>
@@ -226,7 +226,7 @@
 
                 <!-- Card 2 -->
                 <div class="bg-white p-5 md:p-12 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
-                    <h3 class="flex items-center gap-3 text-lg md:text-2xl font-black text-brand-dark mb-5 text-balance">
+                    <h3 class="flex items-center gap-3 text-lg md:text-2xl font-black text-brand-dark mb-5">
                         <span class="w-1.5 h-5 md:h-7 bg-brand-accent rounded-full"></span>
                         Power System Studies
                     </h3>
@@ -257,7 +257,7 @@
 
     <!-- Consultation Section -->
     <section id="intake" class="bg-brand-light py-16 md:py-32 border-b border-emerald-900/5 w-full">
-        <div class="max-w-4xl mx-auto px-6">
+        <div class="max-w-4xl mx-auto px-4">
             <div class="bg-white border border-gray-200 shadow-xl rounded-xl p-5 md:p-12">
                 <div id="intake-form-header" class="text-center mb-6 md:mb-10">
                     <h3 class="text-xl md:text-2xl font-bold tracking-tight text-brand-dark mb-2"><u>Request Technical Consultation</u></h3>
@@ -373,7 +373,7 @@
     </script>
 
     <footer class="bg-brand-dark text-emerald-100/60 text-xs py-12 md:py-16 w-full">
-        <div class="w-full px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="w-full px-4 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="text-center md:text-left">
                 <p class="font-extrabold text-white tracking-widest text-sm md:text-base mb-1">FOSCO ENGINEERING</p>
                 <p>&copy; 2026 Fosco Engineering LLC. All rights reserved.</p>
