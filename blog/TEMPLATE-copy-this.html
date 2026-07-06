@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ============================================================
+         STEP 1: Update the <title> and meta description below.
+         Keep the title under ~60 characters, description under ~155.
+         ============================================================ -->
+    <title>YOUR ARTICLE TITLE HERE | Fosco Engineering</title>
+    <meta name="description" content="A one-sentence summary of the article for search results.">
+    <!-- Remove the line below once you've customized this file into a real article -->
+    <meta name="robots" content="noindex">
+    <meta property="og:title" content="YOUR ARTICLE TITLE HERE | Fosco Engineering">
+    <meta property="og:description" content="A one-sentence summary of the article for search results.">
+    <meta property="og:type" content="article">
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- ============================================================
+         STEP 2: Update this Article schema block. This is what helps
+         Google and AI answer engines (ChatGPT, Perplexity, Claude)
+         understand and cite your article correctly.
+         - headline: same as your title above
+         - description: same as your meta description above
+         - datePublished / dateModified: format YYYY-MM-DD
+         ============================================================ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "YOUR ARTICLE TITLE HERE",
+        "description": "A one-sentence summary of the article for search results.",
+        "datePublished": "YYYY-MM-DD",
+        "dateModified": "YYYY-MM-DD",
+        "author": {
+            "@type": "Person",
+            "name": "Mitch Fosco",
+            "jobTitle": "Professional Engineer"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Fosco Engineering",
+            "url": "https://foscoengineering.com"
+        }
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0A2F25',
+                            accent: '#10B981',
+                            hover: '#059669',
+                            light: '#F4F7F6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-brand-dark antialiased">
+
+    <!-- Header: leave this section exactly as-is, do not edit -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md w-full shadow-sm">
+        <div class="w-full px-6 md:px-12 h-16 md:h-24 flex items-center justify-between">
+            <a href="/index.html" class="flex flex-col justify-center select-none group">
+                <div class="flex items-center space-x-1 tracking-wider font-extrabold text-2xl md:text-3xl text-brand-dark transition-colors duration-200">
+                    <span>F</span>
+                    <span class="relative flex items-center justify-center w-[28px] h-[28px] md:w-[36px] md:h-[36px] mx-0.5">
+                        <img src="/favicon.png" alt="O" class="w-full h-full object-contain">
+                    </span>
+                    <span>SCO</span>
+                </div>
+                <span class="text-[10px] md:text-[13px] tracking-[0.4em] uppercase text-emerald-800/40 font-black mt-0.5 md:mt-1 transition-colors duration-200 group-hover:text-brand-hover">Engineering</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-10 text-sm font-semibold tracking-wide text-emerald-900/80">
+                <a href="/index.html#trust" class="hover:text-brand-accent transition">Our Advantage</a>
+                <a href="/index.html#industries" class="hover:text-brand-accent transition">Industries</a>
+                <a href="/index.html#capabilities" class="hover:text-brand-accent transition">Expertise</a>
+                <a href="/faq.html" class="hover:text-brand-accent transition">FAQ</a>
+                <a href="/blog/" class="text-brand-accent transition">Blog</a>
+                <a href="/index.html#intake" class="bg-brand-accent hover:bg-brand-hover text-brand-dark px-6 py-3 rounded text-xs uppercase tracking-wider font-extrabold transition shadow-sm hover:shadow">
+                    Request Technical Consultation
+                </a>
+            </nav>
+
+            <button id="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" class="md:hidden relative w-10 h-10 flex items-center justify-center text-brand-dark">
+                <svg id="mobile-menu-icon-open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="mobile-menu-icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="w-full h-[3px] bg-brand-accent"></div>
+
+        <div id="mobile-menu-panel" class="hidden md:hidden bg-white border-b border-gray-100 shadow-lg">
+            <nav class="flex flex-col px-6 py-6 space-y-5 text-base font-semibold tracking-wide text-emerald-900/80">
+                <a href="/index.html#trust" class="mobile-menu-link py-1 hover:text-brand-accent transition">Our Advantage</a>
+                <a href="/index.html#industries" class="mobile-menu-link py-1 hover:text-brand-accent transition">Industries</a>
+                <a href="/index.html#capabilities" class="mobile-menu-link py-1 hover:text-brand-accent transition">Expertise</a>
+                <a href="/faq.html" class="mobile-menu-link py-1 hover:text-brand-accent transition">FAQ</a>
+                <a href="/blog/" class="mobile-menu-link py-1 text-brand-accent transition">Blog</a>
+                <a href="/index.html#intake" class="mobile-menu-link bg-brand-accent hover:bg-brand-hover text-brand-dark px-6 py-4 rounded text-xs uppercase tracking-wider font-extrabold transition shadow-sm text-center">
+                    Request Technical Consultation
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenuPanel = document.getElementById('mobile-menu-panel');
+        const mobileMenuIconOpen = document.getElementById('mobile-menu-icon-open');
+        const mobileMenuIconClose = document.getElementById('mobile-menu-icon-close');
+
+        function setMobileMenu(open) {
+            mobileMenuPanel.classList.toggle('hidden', !open);
+            mobileMenuIconOpen.classList.toggle('hidden', open);
+            mobileMenuIconClose.classList.toggle('hidden', !open);
+            mobileMenuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        }
+
+        mobileMenuBtn.addEventListener('click', () => {
+            setMobileMenu(mobileMenuPanel.classList.contains('hidden'));
+        });
+
+        document.querySelectorAll('.mobile-menu-link').forEach(link => {
+            link.addEventListener('click', () => setMobileMenu(false));
+        });
+    </script>
+
+    <!-- ============================================================
+         STEP 3: Article header. Update title, date, and read time.
+         ============================================================ -->
+    <section class="bg-brand-light py-16 md:py-20 border-b border-emerald-900/5 w-full">
+        <div class="w-full px-6 md:px-12 max-w-3xl mx-auto">
+            <p class="text-xs uppercase tracking-[0.3em] text-brand-hover font-bold mb-4">
+                <a href="/blog/" class="hover:underline">&larr; Back to Blog</a>
+            </p>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-brand-dark leading-tight mb-6">
+                YOUR ARTICLE TITLE HERE
+            </h1>
+            <p class="text-sm text-emerald-950/60 font-semibold">
+                By Mitch Fosco, PE &middot; Month DD, YYYY
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         STEP 4: Article body. Write your content between the markers
+         below. Available building blocks:
+           - <p class="..."> for paragraphs (copy the class from the example)
+           - <h2 class="..."> for subheadings
+           - The highlighted "callout box" for a key takeaway (copy from example)
+         Delete the placeholder text and replace with your own writing.
+         ============================================================ -->
+    <section class="bg-white py-12 md:py-16 w-full">
+        <div class="w-full px-6 md:px-12 max-w-3xl mx-auto">
+            <div class="prose max-w-none text-base md:text-lg text-emerald-950/80 leading-relaxed space-y-6">
+
+                <p>
+                    Opening paragraph goes here. Lead with the direct answer or key point &mdash;
+                    this is the sentence most likely to get quoted by Google or an AI answer engine,
+                    so make it stand on its own.
+                </p>
+
+                <h2 class="text-2xl md:text-3xl font-black text-brand-dark pt-4">A Subheading Example</h2>
+
+                <p>
+                    Body paragraph goes here. Keep paragraphs short and each one focused
+                    on a single idea.
+                </p>
+
+                <!-- Example callout box: use for a key takeaway, warning, or important note -->
+                <div class="bg-emerald-50 border-l-4 border-brand-hover p-5 md:p-6 rounded-r">
+                    <p class="text-sm md:text-base text-brand-dark font-bold leading-snug">
+                        Use a callout box like this to highlight the single most important
+                        takeaway from the article.
+                    </p>
+                </div>
+
+                <p>
+                    Closing paragraph goes here.
+                </p>
+
+            </div>
+
+            <!-- CTA back to intake -->
+            <div class="mt-16 text-center bg-brand-light rounded-2xl p-10 md:p-12">
+                <h3 class="text-xl md:text-2xl font-extrabold text-brand-dark mb-3">Have a project in mind?</h3>
+                <p class="text-sm md:text-base text-emerald-950/70 mb-8 max-w-xl mx-auto">
+                    Reach out directly and we'll walk through your scope, timeline, and requirements.
+                </p>
+                <a href="/index.html#intake" class="inline-block bg-brand-accent hover:bg-brand-hover text-brand-dark font-extrabold text-xs md:text-sm uppercase tracking-wider px-10 py-4 rounded shadow-md hover:shadow-lg transition">
+                    Request Technical Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-emerald-100/60 text-xs py-12 md:py-16 w-full">
+        <div class="w-full px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left">
+                <p class="font-extrabold text-white tracking-widest text-sm md:text-base mb-1">FOSCO ENGINEERING</p>
+                <p>&copy; 2026 Fosco Engineering LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
