@@ -1,0 +1,4 @@
+# Cloudflare Workers static-asset redirects.
+# Format: <from> <to> <status>
+/faq.html / 301
+/faq / 301

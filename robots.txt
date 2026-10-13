@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
+# If the site moves domains, update this line and sitemap.xml - the domain
+# appears in no other file.
 Sitemap: https://foscoengineering.com/sitemap.xml

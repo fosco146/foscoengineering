@@ -3,38 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fosco Engineering | Arc Flash Studies &amp; Third-Party Review</title>
-    <meta name="description" content="We provide arc flash studies, protective device coordination, short circuit analysis, and third-party engineering review. All performed directly by a licensed Professional Engineer.">
-    <meta name="keywords" content="arc flash study, arc flash, arc flash ohio, arc flash kentucky, arc flash california, third party review, third-party arc flash, third party arc flash, third-party engineering review, protective device coordination, short circuit analysis, NFPA 70E, IEEE 1584, power systems engineer, data center arc flash study, industrial arc flash study, commercial arc flash study, electrical contractor engineering support, arc flash studies for electrical contractors">
-    <meta property="og:title" content="Fosco Engineering | Arc Flash Studies & Third-Party Review">
-    <meta property="og:description" content="Arc flash studies and third-party engineering review for data centers, industrial, and commercial facilities. All performed directly by a licensed Professional Engineer.">
+    <title>Mitch Fosco | Process &amp; Automation Consulting for Service Businesses</title>
+    <meta name="description" content="I find the bottleneck costing your business hours every week, then build the fix at a fixed price. Process and automation consulting for trade and field-service businesses.">
+    <meta name="keywords" content="process consulting, automation consulting, small business automation, field service automation, service business consultant, workflow automation, unbilled work, invoicing bottleneck, job tracking, HVAC business automation, plumbing business automation, electrical contractor automation, fixed price consulting, Boston process consultant">
+    <meta property="og:title" content="Mitch Fosco | Process &amp; Automation Consulting for Service Businesses">
+    <meta property="og:description" content="I find the bottleneck costing your business hours every week, then build the fix at a fixed price. Process and automation consulting for trade and field-service businesses.">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mitch Fosco, Process &amp; Automation Consulting">
+    <meta property="og:locale" content="en_US">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Business + person data. URLs are relative so the site can change domains. -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Fosco Engineering",
-        "description": "Fosco Engineering provides arc flash studies, protective device coordination, short circuit analysis, and third-party engineering review. All performed directly by a licensed Professional Engineer.",
-        "url": "https://foscoengineering.com",
-        "founder": {
-            "@type": "Person",
-            "name": "Mitch Fosco",
-            "jobTitle": "Professional Engineer"
-        },
-        "areaServed": "United States",
-        "knowsAbout": ["Arc Flash Studies", "NFPA 70E", "IEEE 1584", "Protective Device Coordination", "Short Circuit Analysis", "Third-Party Engineering Review"],
-        "audience": [
-            { "@type": "Audience", "audienceType": "Data Centers" },
-            { "@type": "Audience", "audienceType": "Industrial Facilities" },
-            { "@type": "Audience", "audienceType": "Commercial Facilities" },
-            { "@type": "Audience", "audienceType": "Electrical Contractors" }
+        "@graph": [
+            {
+                "@type": "ProfessionalService",
+                "@id": "/#business",
+                "name": "Mitch Fosco, Process & Automation Consulting",
+                "description": "Fixed-price process and automation consulting for trade and field-service businesses. I map how work really moves through your company, find the bottleneck, and build the fix.",
+                "url": "/",
+                "founder": { "@id": "/#mitch" },
+                "areaServed": "United States",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Boston",
+                    "addressRegion": "MA",
+                    "addressCountry": "US"
+                },
+                "knowsAbout": [
+                    "Business process mapping",
+                    "Workflow automation",
+                    "Invoicing and billing workflows",
+                    "Job tracking systems",
+                    "Report automation",
+                    "Field service operations"
+                ],
+                "audience": [
+                    { "@type": "Audience", "audienceType": "HVAC contractors" },
+                    { "@type": "Audience", "audienceType": "Plumbing contractors" },
+                    { "@type": "Audience", "audienceType": "Electrical contractors" },
+                    { "@type": "Audience", "audienceType": "Fire and security companies" },
+                    { "@type": "Audience", "audienceType": "Field service businesses" },
+                    { "@type": "Audience", "audienceType": "Small manufacturers" },
+                    { "@type": "Audience", "audienceType": "Property managers" }
+                ],
+                "makesOffer": [
+                    {
+                        "@type": "Offer",
+                        "name": "Bottleneck Audit",
+                        "description": "Two weeks. I interview your team, map how a job moves from first call to paid invoice, and rank the top three fixes by hours and dollars saved.",
+                        "priceSpecification": {
+                            "@type": "PriceSpecification",
+                            "price": "1500",
+                            "priceCurrency": "USD"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "Fix Build",
+                        "description": "I build the top fix using tools you already have where possible, test it with your team, and hand it over with a one-page how-to.",
+                        "priceSpecification": {
+                            "@type": "PriceSpecification",
+                            "minPrice": "3000",
+                            "maxPrice": "8000",
+                            "priceCurrency": "USD"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "Keep-Running Support",
+                        "description": "Optional monthly support: monitoring, fixes when something breaks, small improvements and a monthly report of hours saved.",
+                        "priceSpecification": {
+                            "@type": "UnitPriceSpecification",
+                            "price": "400",
+                            "priceCurrency": "USD",
+                            "unitText": "MONTH"
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "Person",
+                "@id": "/#mitch",
+                "name": "Mitch Fosco",
+                "jobTitle": "Process & Automation Consultant",
+                "worksFor": { "@id": "/#business" }
+            }
         ]
     }
     </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What kinds of businesses do you work with?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Owner-run trade and service businesses with roughly 5–50 people: HVAC, plumbing, electrical, fire and security, field service, facility maintenance, small manufacturers and property managers."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I have to buy new software?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Usually not. I start with the tools you already have, like your spreadsheets, accounting software or job management system, and only recommend something new when it clearly pays for itself."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why fixed prices instead of hourly?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You know the cost before we start, and I'm paid for results, not time. Every build is scoped in writing first."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you work remotely?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. I meet in person in the Boston area when it helps, and everything else works remotely."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does it take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The audit takes two weeks. Most builds take two to six weeks depending on scope."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Where does AI fit in?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Where it saves real time, like reading documents, drafting follow-ups or sorting requests. I don't add AI for its own sake."
+                }
+            }
+        ]
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -42,10 +162,10 @@
                 extend: {
                     colors: {
                         brand: {
-                            dark: '#0A2F25',   // Deep Emerald Base Text
-                            accent: '#10B981', // Crisp Mint Logo & Action Accent
-                            hover: '#059669',  // Medium Emerald for clean interactive hover
-                            light: '#F4F7F6'   // Light Clean Mint Canvas
+                            dark: '#0A2F25',   // Deep base text
+                            accent: '#10B981', // Single accent color
+                            hover: '#059669',  // Interactive hover
+                            light: '#F4F7F6'   // Light canvas
                         }
                     },
                     fontFamily: {
@@ -57,29 +177,32 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        
-        /* Premium, ultra-sharp architectural cross-grid that scales perfectly without shifting symbols */
-        .engineering-canvas {
+        html { scroll-behavior: smooth; }
+
+        /* Subtle cross-grid canvas behind the hero */
+        .grid-canvas {
             background-color: #ffffff;
-            background-image: 
+            background-image:
                 radial-gradient(circle at 1px 1px, rgba(16, 185, 129, 0.2) 1.5px, transparent 0),
                 linear-gradient(to right, rgba(16, 185, 129, 0.2) 1px, transparent 1px),
                 linear-gradient(to bottom, rgba(16, 185, 129, 0.2) 1px, transparent 1px);
             background-size: 40px 40px;
             background-position: center center;
         }
+
+        /* Keep anchor targets clear of the sticky header */
+        section[id] { scroll-margin-top: 4rem; }
+        @media (min-width: 768px) { section[id] { scroll-margin-top: 6rem; } }
     </style>
 </head>
 <body class="bg-white text-brand-dark antialiased">
 
-    <!-- Responsive Header with High-Visibility Under-Nav Mint Accent Line -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md w-full shadow-sm">
         <div class="w-full px-6 md:px-12 h-16 md:h-24 flex items-center justify-between">
-            <!-- Refined Tightened Logo Group -->
-            <a href="#" class="flex flex-col justify-center select-none group">
+            <a href="#top" class="flex flex-col justify-center select-none group" aria-label="Mitch Fosco, Process and Automation Consulting - home">
                 <div class="flex items-center space-x-1 tracking-wider font-extrabold text-2xl md:text-3xl text-brand-dark transition-colors duration-200">
                     <span>F</span>
                     <span class="relative flex items-center justify-center w-[28px] h-[28px] md:w-[36px] md:h-[36px] mx-0.5">
@@ -87,21 +210,20 @@
                     </span>
                     <span>SCO</span>
                 </div>
-                <span class="text-[10px] md:text-[13px] tracking-[0.4em] uppercase text-emerald-800/40 font-black mt-0.5 md:mt-1 transition-colors duration-200 group-hover:text-brand-hover">Engineering</span>
+                <span class="text-[9px] md:text-[12px] tracking-[0.25em] uppercase text-emerald-800/40 font-black mt-0.5 md:mt-1 transition-colors duration-200 group-hover:text-brand-hover">Process &amp; Automation</span>
             </a>
-            
+
             <nav class="hidden md:flex items-center space-x-10 text-sm font-semibold tracking-wide text-emerald-900/80">
-                <a href="#trust" class="hover:text-brand-accent transition">Our Advantage</a>
-                <a href="#industries" class="hover:text-brand-accent transition">Industries</a>
-                <a href="#capabilities" class="hover:text-brand-accent transition">Expertise</a>
-                <a href="faq.html" class="hover:text-brand-accent transition">FAQ</a>
-                <a href="/blog/" class="hover:text-brand-accent transition">Blog</a>
-                <a href="#intake" class="bg-brand-accent hover:bg-brand-hover text-brand-dark px-6 py-3 rounded text-xs uppercase tracking-wider font-extrabold transition shadow-sm hover:shadow">
-                    Request Technical Consultation
+                <a href="#how" class="hover:text-brand-accent transition">How It Works</a>
+                <a href="#results" class="hover:text-brand-accent transition">Results</a>
+                <a href="#about" class="hover:text-brand-accent transition">About</a>
+                <a href="#faq" class="hover:text-brand-accent transition">FAQ</a>
+                <a href="/blog/" class="hover:text-brand-accent transition">Notes</a>
+                <a href="#contact" class="bg-brand-accent hover:bg-brand-hover text-brand-dark px-6 py-3 rounded text-xs uppercase tracking-wider font-extrabold transition shadow-sm hover:shadow">
+                    Book a Free Call
                 </a>
             </nav>
 
-            <!-- Mobile Menu Toggle -->
             <button id="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" class="md:hidden relative w-10 h-10 flex items-center justify-center text-brand-dark">
                 <svg id="mobile-menu-icon-open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -111,25 +233,403 @@
                 </svg>
             </button>
         </div>
-        <!-- Fixed Under-Nav Anchor Line -->
         <div class="w-full h-[3px] bg-brand-accent"></div>
 
-        <!-- Mobile Menu Panel -->
         <div id="mobile-menu-panel" class="hidden md:hidden bg-white border-b border-gray-100 shadow-lg">
             <nav class="flex flex-col px-6 py-6 space-y-5 text-base font-semibold tracking-wide text-emerald-900/80">
-                <a href="#trust" class="mobile-menu-link py-1 hover:text-brand-accent transition">Our Advantage</a>
-                <a href="#industries" class="mobile-menu-link py-1 hover:text-brand-accent transition">Industries</a>
-                <a href="#capabilities" class="mobile-menu-link py-1 hover:text-brand-accent transition">Expertise</a>
-                <a href="faq.html" class="mobile-menu-link py-1 hover:text-brand-accent transition">FAQ</a>
-                <a href="/blog/" class="mobile-menu-link py-1 hover:text-brand-accent transition">Blog</a>
-                <a href="#intake" class="mobile-menu-link bg-brand-accent hover:bg-brand-hover text-brand-dark px-6 py-4 rounded text-xs uppercase tracking-wider font-extrabold transition shadow-sm text-center">
-                    Request Technical Consultation
+                <a href="#how" class="mobile-menu-link py-1 hover:text-brand-accent transition">How It Works</a>
+                <a href="#results" class="mobile-menu-link py-1 hover:text-brand-accent transition">Results</a>
+                <a href="#about" class="mobile-menu-link py-1 hover:text-brand-accent transition">About</a>
+                <a href="#faq" class="mobile-menu-link py-1 hover:text-brand-accent transition">FAQ</a>
+                <a href="/blog/" class="mobile-menu-link py-1 hover:text-brand-accent transition">Notes</a>
+                <a href="#contact" class="mobile-menu-link bg-brand-accent hover:bg-brand-hover text-brand-dark px-6 py-4 rounded text-xs uppercase tracking-wider font-extrabold transition shadow-sm text-center">
+                    Book a Free Call
                 </a>
             </nav>
         </div>
     </header>
 
+    <!-- HERO: sized to fit a phone screen without scrolling -->
+    <section id="top" class="relative w-full grid-canvas min-h-[calc(100svh-4rem)] md:min-h-[calc(100vh-6rem)] flex flex-col justify-center items-center border-b border-gray-100 py-10 md:py-16 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_10%,rgba(255,255,255,0.65)100%)] pointer-events-none z-0"></div>
+
+        <div class="relative w-full px-6 md:px-12 text-center z-10">
+            <h1 class="text-[1.75rem] sm:text-5xl lg:text-6xl font-extrabold tracking-tight max-w-5xl mx-auto leading-[1.15] text-brand-dark">
+                Your business is losing hours every week. I find where, and fix it.
+            </h1>
+
+            <p class="mt-5 md:mt-8 text-[0.95rem] md:text-lg text-emerald-950/70 font-medium max-w-3xl mx-auto leading-relaxed">
+                Fixed-price process and automation consulting for trade and service businesses. I map how work really moves through your company, find the bottleneck, and build the fix.
+            </p>
+
+            <div class="mt-7 md:mt-10">
+                <a href="#contact" class="inline-block w-full sm:w-auto bg-brand-accent hover:bg-brand-hover text-brand-dark font-extrabold text-sm md:text-base px-8 md:px-12 py-4 md:py-5 rounded shadow-md hover:shadow-xl transition text-center">
+                    Book a free 30-minute call
+                </a>
+            </div>
+
+            <!-- Proof strip -->
+            <div class="mt-9 md:mt-14 grid grid-cols-3 gap-2 md:gap-8 max-w-3xl mx-auto border-t border-emerald-900/10 pt-6 md:pt-8">
+                <div>
+                    <p class="text-xl md:text-4xl font-extrabold tracking-tight text-brand-dark">$250K+</p>
+                    <p class="mt-1 text-[0.65rem] md:text-sm font-semibold text-emerald-950/60 leading-tight">in unbilled work recovered</p>
+                </div>
+                <div class="border-l border-r border-emerald-900/10 px-2 md:px-4">
+                    <p class="text-xl md:text-4xl font-extrabold tracking-tight text-brand-dark">200+</p>
+                    <p class="mt-1 text-[0.65rem] md:text-sm font-semibold text-emerald-950/60 leading-tight">hours back a year</p>
+                </div>
+                <div>
+                    <p class="text-xl md:text-4xl font-extrabold tracking-tight text-brand-dark">$30K/yr</p>
+                    <p class="mt-1 text-[0.65rem] md:text-sm font-semibold text-emerald-950/60 leading-tight">in labor saved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE PROBLEM -->
+    <section id="problem" class="bg-white py-16 md:py-28 border-b border-gray-100 w-full">
+        <div class="w-full px-6 md:px-12 max-w-4xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-brand-dark mb-8 md:mb-12">
+                Sound familiar?
+            </h2>
+
+            <ul class="space-y-5">
+                <li class="flex items-start text-base md:text-lg text-emerald-950/85 leading-relaxed">
+                    <span class="text-brand-accent font-bold mr-3 text-xl leading-none mt-0.5" aria-hidden="true">&bull;</span>
+                    Jobs get finished, but the invoice goes out weeks later, or never.
+                </li>
+                <li class="flex items-start text-base md:text-lg text-emerald-950/85 leading-relaxed">
+                    <span class="text-brand-accent font-bold mr-3 text-xl leading-none mt-0.5" aria-hidden="true">&bull;</span>
+                    The same information gets typed into three different places.
+                </li>
+                <li class="flex items-start text-base md:text-lg text-emerald-950/85 leading-relaxed">
+                    <span class="text-brand-accent font-bold mr-3 text-xl leading-none mt-0.5" aria-hidden="true">&bull;</span>
+                    Maintenance renewals and follow-ups slip through the cracks.
+                </li>
+                <li class="flex items-start text-base md:text-lg text-emerald-950/85 leading-relaxed">
+                    <span class="text-brand-accent font-bold mr-3 text-xl leading-none mt-0.5" aria-hidden="true">&bull;</span>
+                    You're doing paperwork at night because the office can't keep up.
+                </li>
+                <li class="flex items-start text-base md:text-lg text-emerald-950/85 leading-relaxed">
+                    <span class="text-brand-accent font-bold mr-3 text-xl leading-none mt-0.5" aria-hidden="true">&bull;</span>
+                    You pay for software nobody fully uses.
+                </li>
+            </ul>
+
+            <p class="mt-10 md:mt-12 border-l-4 border-brand-accent bg-brand-light pl-5 pr-4 py-5 rounded-r text-lg md:text-2xl font-bold text-brand-dark leading-snug">
+                Most service businesses have earned money they haven't billed. I find it.
+            </p>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="bg-brand-light py-16 md:py-28 border-b border-emerald-900/5 w-full">
+        <div class="w-full px-6 md:px-12 max-w-4xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-brand-dark mb-10 md:mb-16 max-w-3xl">
+                Three steps, fixed prices, no hourly billing
+            </h2>
+
+            <ol class="flex flex-col gap-6 md:gap-8">
+                <li class="bg-white p-6 md:p-10 rounded-xl border border-gray-200 shadow-sm">
+                    <div class="flex items-baseline gap-4 mb-4">
+                        <span class="text-brand-accent font-extrabold text-2xl md:text-3xl leading-none" aria-hidden="true">1</span>
+                        <h3 class="text-lg md:text-2xl font-black text-brand-dark leading-snug">
+                            Bottleneck Audit: <span class="text-brand-hover">$1,500 fixed</span>
+                        </h3>
+                    </div>
+                    <p class="text-base md:text-lg text-emerald-950/80 leading-relaxed">
+                        Two weeks. I interview your team, map how a job moves from first call to paid invoice, and rank the top three fixes by hours and dollars saved. You get a fixed quote for the build. If we build together, the $1,500 is credited.
+                    </p>
+                </li>
+
+                <li class="bg-white p-6 md:p-10 rounded-xl border border-gray-200 shadow-sm">
+                    <div class="flex items-baseline gap-4 mb-4">
+                        <span class="text-brand-accent font-extrabold text-2xl md:text-3xl leading-none" aria-hidden="true">2</span>
+                        <h3 class="text-lg md:text-2xl font-black text-brand-dark leading-snug">
+                            Fix Build: <span class="text-brand-hover">fixed quote, typically $3,000&ndash;$8,000</span>
+                        </h3>
+                    </div>
+                    <p class="text-base md:text-lg text-emerald-950/80 leading-relaxed">
+                        I build the top fix using tools you already have where possible, test it with your team, and hand it over with a one-page how-to. We measure before and after.
+                    </p>
+                </li>
+
+                <li class="bg-white p-6 md:p-10 rounded-xl border border-gray-200 shadow-sm">
+                    <div class="flex items-baseline gap-4 mb-4">
+                        <span class="text-brand-accent font-extrabold text-2xl md:text-3xl leading-none" aria-hidden="true">3</span>
+                        <h3 class="text-lg md:text-2xl font-black text-brand-dark leading-snug">
+                            Keep-Running Support: <span class="text-brand-hover">$400/month (optional)</span>
+                        </h3>
+                    </div>
+                    <p class="text-base md:text-lg text-emerald-950/80 leading-relaxed">
+                        Monitoring, fixes when something breaks, small improvements and a monthly report of hours saved.
+                    </p>
+                </li>
+            </ol>
+
+            <p class="mt-10 md:mt-14 text-xl md:text-3xl font-extrabold tracking-tight text-brand-dark text-center leading-snug">
+                You don't pay for my hours. You pay for the hours you get back.
+            </p>
+        </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section id="results" class="bg-brand-dark py-16 md:py-28 w-full relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(16,185,129,0.08),transparent_60%)] pointer-events-none"></div>
+
+        <div class="w-full px-6 md:px-12 max-w-4xl mx-auto relative z-10">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-10 md:mb-16">
+                Results
+            </h2>
+
+            <div class="flex flex-col gap-6 md:gap-10">
+                <!-- Case study 1 -->
+                <article class="bg-white/5 border border-white/10 rounded-xl p-6 md:p-10">
+                    <h3 class="text-lg md:text-2xl font-black text-white leading-snug mb-1">
+                        Finding money the firm had already earned
+                    </h3>
+                    <p class="text-xs md:text-sm uppercase tracking-wider text-brand-accent font-bold mb-6">
+                        A national electrical testing firm
+                    </p>
+
+                    <dl class="space-y-5 text-emerald-50/80">
+                        <div>
+                            <dt class="text-xs uppercase tracking-wider font-bold text-white/50 mb-1">Problem</dt>
+                            <dd class="text-base md:text-lg leading-relaxed">Two kinds of revenue were stuck. Some projects were fully complete but never fully invoiced. Others were partially done and had stalled, so they never reached the finish line or the invoice. No one had a single view of which jobs were in which state.</dd>
+                        </div>
+                        <div>
+                            <dt class="text-xs uppercase tracking-wider font-bold text-white/50 mb-1">Fix</dt>
+                            <dd class="text-base md:text-lg leading-relaxed">A live pipeline in the firm's existing database showing every project's status, completion and billing state, with flags for finished-but-unbilled work and stalled jobs.</dd>
+                        </div>
+                        <div>
+                            <dt class="text-xs uppercase tracking-wider font-bold text-white/50 mb-1">Result</dt>
+                            <dd class="text-base md:text-lg leading-relaxed">
+                                <span class="block text-3xl md:text-5xl font-extrabold tracking-tight text-brand-accent mb-2">$250K+</span>
+                                in earned revenue identified, completed and invoiced, and a shorter cycle from field work to invoice.
+                            </dd>
+                        </div>
+                    </dl>
+                </article>
+
+                <!-- Case study 2 -->
+                <article class="bg-white/5 border border-white/10 rounded-xl p-6 md:p-10">
+                    <h3 class="text-lg md:text-2xl font-black text-white leading-snug mb-1">
+                        Two hours back on every report
+                    </h3>
+                    <p class="text-xs md:text-sm uppercase tracking-wider text-brand-accent font-bold mb-6">
+                        Same firm, 100+ technical reports a year
+                    </p>
+
+                    <dl class="space-y-5 text-emerald-50/80">
+                        <div>
+                            <dt class="text-xs uppercase tracking-wider font-bold text-white/50 mb-1">Problem</dt>
+                            <dd class="text-base md:text-lg leading-relaxed">Every report was hand-built. Staff re-typed data from the database into Word, formatted tables by hand and assembled the final PDF package by drag-and-drop. Then a reviewer checked it all for copy errors.</dd>
+                        </div>
+                        <div>
+                            <dt class="text-xs uppercase tracking-wider font-bold text-white/50 mb-1">Fix</dt>
+                            <dd class="text-base md:text-lg leading-relaxed">A one-click report template that pulls data straight from the database, plus a desktop tool that assembles the client package automatically.</dd>
+                        </div>
+                        <div>
+                            <dt class="text-xs uppercase tracking-wider font-bold text-white/50 mb-1">Result</dt>
+                            <dd>
+                                <div class="grid grid-cols-3 gap-2 md:gap-6 mb-5">
+                                    <div>
+                                        <p class="text-2xl md:text-4xl font-extrabold tracking-tight text-brand-accent">2 hrs</p>
+                                        <p class="mt-1 text-[0.65rem] md:text-sm font-semibold text-emerald-50/50 leading-tight">saved per report</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-2xl md:text-4xl font-extrabold tracking-tight text-brand-accent">200+</p>
+                                        <p class="mt-1 text-[0.65rem] md:text-sm font-semibold text-emerald-50/50 leading-tight">hours recovered a year</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-2xl md:text-4xl font-extrabold tracking-tight text-brand-accent">~$30K</p>
+                                        <p class="mt-1 text-[0.65rem] md:text-sm font-semibold text-emerald-50/50 leading-tight">a year in labor</p>
+                                    </div>
+                                </div>
+                                <p class="text-base md:text-lg leading-relaxed">
+                                    2 hours saved per report (1 for the writer, 1 for the reviewer); 200+ hours of senior staff time recovered per year; about $30K a year in labor savings; transcription errors between database and report eliminated.
+                                </p>
+                            </dd>
+                        </div>
+                    </dl>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="bg-white py-16 md:py-28 border-b border-gray-100 w-full">
+        <div class="w-full px-6 md:px-12 max-w-4xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-brand-dark mb-10 md:mb-14">
+                Why work with me
+            </h2>
+
+            <div class="bg-brand-light rounded-2xl p-6 md:p-12 flex flex-col md:flex-row items-center md:items-start gap-7 md:gap-12">
+                <img src="images/mitch-fosco-headshot.jpg" alt="Mitch Fosco" class="w-28 h-28 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-md shrink-0">
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl md:text-2xl font-extrabold text-brand-dark mb-1">Mitch Fosco</h3>
+                    <p class="text-xs md:text-sm uppercase tracking-wider text-brand-hover font-bold mb-5">Process &amp; Automation Consulting &middot; Boston, MA</p>
+                    <p class="text-base md:text-lg text-emerald-950/85 leading-relaxed">
+                        I'm Mitch Fosco, PE (Ohio). I've spent ten years in technical services, building the systems that keep projects moving, from job tracking and billing pipelines to report automation. Most automation freelancers sell one tool. I start by finding what's actually broken, then pick the simplest tool that fixes it, often one you already pay for. I document everything, test before handoff and measure the result.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="bg-brand-light py-16 md:py-28 border-b border-emerald-900/5 w-full">
+        <div class="w-full px-6 md:px-12 max-w-4xl mx-auto">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-brand-dark mb-10 md:mb-14">
+                Common questions
+            </h2>
+
+            <div class="flex flex-col gap-5 md:gap-6">
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-xl font-black text-brand-dark mb-3 leading-snug">What kinds of businesses do you work with?</h3>
+                    <p class="text-base md:text-lg text-emerald-950/80 leading-relaxed">Owner-run trade and service businesses with roughly 5&ndash;50 people: HVAC, plumbing, electrical, fire and security, field service, facility maintenance, small manufacturers and property managers.</p>
+                </div>
+
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-xl font-black text-brand-dark mb-3 leading-snug">Do I have to buy new software?</h3>
+                    <p class="text-base md:text-lg text-emerald-950/80 leading-relaxed">Usually not. I start with the tools you already have, like your spreadsheets, accounting software or job management system, and only recommend something new when it clearly pays for itself.</p>
+                </div>
+
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-xl font-black text-brand-dark mb-3 leading-snug">Why fixed prices instead of hourly?</h3>
+                    <p class="text-base md:text-lg text-emerald-950/80 leading-relaxed">You know the cost before we start, and I'm paid for results, not time. Every build is scoped in writing first.</p>
+                </div>
+
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-xl font-black text-brand-dark mb-3 leading-snug">Do you work remotely?</h3>
+                    <p class="text-base md:text-lg text-emerald-950/80 leading-relaxed">Yes. I meet in person in the Boston area when it helps, and everything else works remotely.</p>
+                </div>
+
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-xl font-black text-brand-dark mb-3 leading-snug">How long does it take?</h3>
+                    <p class="text-base md:text-lg text-emerald-950/80 leading-relaxed">The audit takes two weeks. Most builds take two to six weeks depending on scope.</p>
+                </div>
+
+                <div class="bg-white p-6 md:p-8 rounded-xl border border-gray-200 shadow-sm">
+                    <h3 class="text-base md:text-xl font-black text-brand-dark mb-3 leading-snug">Where does AI fit in?</h3>
+                    <p class="text-base md:text-lg text-emerald-950/80 leading-relaxed">Where it saves real time, like reading documents, drafting follow-ups or sorting requests. I don't add AI for its own sake.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-white py-16 md:py-28 w-full">
+        <div class="max-w-4xl mx-auto px-6 md:px-12">
+            <div id="intake-form-header" class="mb-8 md:mb-12">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-brand-dark mb-4">
+                    Find out what's slowing you down
+                </h2>
+                <p class="text-base md:text-lg text-emerald-950/70 leading-relaxed">
+                    Book a free 30-minute call. Tell me how a job moves through your business, and I'll tell you where I'd look first.
+                </p>
+            </div>
+
+            <div class="bg-brand-light border border-gray-200 shadow-sm rounded-xl p-6 md:p-10">
+                <form id="intake-form" action="https://formspree.io/f/mbdvabpd" method="POST" class="space-y-6">
+                    <input type="hidden" name="_subject" value="New consulting inquiry from the website">
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="contact_name" class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Name <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
+                            <input id="contact_name" type="text" name="contact_name" autocomplete="name" required class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-base text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition">
+                        </div>
+                        <div>
+                            <label for="business_name" class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Business name <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
+                            <input id="business_name" type="text" name="business_name" autocomplete="organization" required class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-base text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="role" class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Role</label>
+                        <input id="role" type="text" name="role" placeholder="Owner, operations manager, office manager&hellip;" autocomplete="organization-title" class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-base text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition">
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="phone" class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Phone <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
+                            <input id="phone" type="tel" name="phone" autocomplete="tel" required class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-base text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Email <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
+                            <input id="email" type="email" name="email" autocomplete="email" required class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-base text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="employees" class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Number of employees <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
+                            <select id="employees" name="employees" required class="w-full appearance-none bg-white border-2 border-gray-300 rounded px-4 py-3 pr-10 text-base text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition font-medium bg-no-repeat" style="background-image: url('data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 fill=%22none%22 viewBox=%220 0 24 24%22 stroke=%22%2310B981%22 stroke-width=%222.5%22&gt;&lt;path stroke-linecap=%22round%22 stroke-linejoin=%22round%22 d=%22M19 9l-7 7-7-7%22/&gt;&lt;/svg&gt;'); background-position: right 14px center; background-size: 18px 18px;">
+                                <option value="" disabled selected>Select&hellip;</option>
+                                <option>1&ndash;4</option>
+                                <option>5&ndash;15</option>
+                                <option>16&ndash;50</option>
+                                <option>50+</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="industry" class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Industry <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
+                            <select id="industry" name="industry" required class="w-full appearance-none bg-white border-2 border-gray-300 rounded px-4 py-3 pr-10 text-base text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition font-medium bg-no-repeat" style="background-image: url('data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 fill=%22none%22 viewBox=%220 0 24 24%22 stroke=%22%2310B981%22 stroke-width=%222.5%22&gt;&lt;path stroke-linecap=%22round%22 stroke-linejoin=%22round%22 d=%22M19 9l-7 7-7-7%22/&gt;&lt;/svg&gt;'); background-position: right 14px center; background-size: 18px 18px;">
+                                <option value="" disabled selected>Select&hellip;</option>
+                                <option>HVAC</option>
+                                <option>Plumbing</option>
+                                <option>Electrical</option>
+                                <option>Fire &amp; security</option>
+                                <option>Field service</option>
+                                <option>Manufacturing</option>
+                                <option>Property management</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">What's slowing your business down? <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
+                        <textarea id="message" name="message" required rows="5" placeholder="Where does work get stuck? What takes longer than it should?" class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-base text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition resize-y"></textarea>
+                    </div>
+
+                    <div id="intake-form-error" class="hidden text-sm text-red-600 font-semibold text-center"></div>
+
+                    <div class="pt-2">
+                        <button type="submit" id="intake-submit-btn" class="w-full bg-brand-accent hover:bg-brand-hover text-brand-dark font-extrabold text-sm md:text-base py-4 rounded transition shadow-md hover:shadow-lg">
+                            Book a free 30-minute call
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Thank-you state, shown after a successful submission -->
+                <div id="intake-thank-you" class="hidden text-center py-10">
+                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-emerald-50 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-brand-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl md:text-2xl font-bold tracking-tight text-brand-dark mb-3">Got it</h3>
+                    <p class="text-base text-emerald-950/70 max-w-md mx-auto leading-relaxed">
+                        Thanks for reaching out. I'll be in touch shortly to set up your free 30-minute call.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-emerald-100/60 text-xs py-10 md:py-14 w-full">
+        <div class="w-full px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+            <div>
+                <p class="font-extrabold text-white tracking-widest text-sm md:text-base mb-1">MITCH FOSCO</p>
+                <p>Process &amp; Automation Consulting &middot; Boston, MA</p>
+            </div>
+            <p>&copy; 2026 Mitch Fosco. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script>
+        // Mobile nav
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenuPanel = document.getElementById('mobile-menu-panel');
         const mobileMenuIconOpen = document.getElementById('mobile-menu-icon-open');
@@ -149,387 +649,27 @@
         document.querySelectorAll('.mobile-menu-link').forEach(link => {
             link.addEventListener('click', () => setMobileMenu(false));
         });
-    </script>
 
-    <!-- Optimized Viewport Hero Section with Pinned Technical Canvas Layout -->
-    <section class="relative w-full engineering-canvas min-h-[88vh] md:min-h-[92vh] flex flex-col justify-center items-center border-b border-gray-100 py-12 md:py-16 lg:py-0 overflow-hidden">
-        
-        <!-- Subtle Perimeter Framing Lines (Emphasizes Architectural Precision without cluttering center text) -->
-        <div class="absolute inset-x-12 top-0 bottom-0 border-l border-r border-emerald-800/[0.03] pointer-events-none hidden lg:block"></div>
-        <div class="absolute inset-y-16 left-0 right-0 border-t border-b border-emerald-800/[0.03] pointer-events-none hidden lg:block"></div>
-
-        <!-- Smooth radial fade to keep layout clean behind main text blocks -->
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_10%,rgba(255,255,255,0.5)100%)] pointer-events-none z-0"></div>
-
-        <div class="relative w-full px-6 md:px-12 text-center flex-grow flex flex-col justify-center z-10">
-            <h1 class="text-3xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-6xl mx-auto leading-[1.15] md:leading-[1.12] text-brand-dark">
-                Arc Flash Studies <br class="hidden sm:inline">&amp; Third-Party Review.
-            </h1>
-
-            <p class="mt-6 md:mt-8 text-base md:text-lg text-emerald-950/70 font-medium max-w-3xl mx-auto leading-relaxed">
-                Arc flash studies, power system analysis, and independent third-party review.
-                <br class="hidden sm:inline">
-                Delivered with energized expertise by a licensed Professional Engineer.
-            </p>
-
-            <div class="mt-10 md:mt-14 flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6">
-                <a href="#intake" class="w-full sm:w-auto bg-brand-accent hover:bg-brand-hover text-black md:text-brand-dark font-extrabold text-xs md:text-sm uppercase tracking-wider px-8 md:px-12 py-4 md:py-5 rounded shadow-md hover:shadow-xl transition text-center">
-                    Request Technical Consultation
-                </a>
-                <a href="#capabilities" class="w-full sm:w-auto bg-white border-2 border-black md:border-brand-dark hover:border-brand-accent hover:bg-brand-light text-black md:text-brand-dark px-8 md:px-12 py-4 md:py-5 rounded font-bold text-xs md:text-sm uppercase tracking-wider transition text-center">
-                    Explore Capabilities
-                </a>
-            </div>
-        </div>
-
-        <!-- Animated Downward Scroll Indicator -->
-        <div class="w-full flex justify-center pb-10 pt-6 md:py-6 z-10">
-            <a href="#trust" class="animate-bounce inline-flex items-center justify-center p-2 rounded-full text-emerald-900/40 hover:text-brand-hover transition-colors duration-200" aria-label="Scroll to Our Advantage">
-                <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-            </a>
-        </div>
-    </section>
-
-    <!-- Why Us Section (Clean White Background with Premium Framing) -->
-    <section id="trust" class="bg-white py-20 md:py-32 border-b border-gray-100 w-full">
-        <div class="w-full px-6 md:px-12 max-w-7xl mx-auto">
-            <div class="mb-16 md:mb-20 text-center md:text-left">
-                <h2 class="text-xs uppercase tracking-[0.3em] text-brand-hover font-bold mb-3">Our Advantage</h2>
-                <p class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-brand-dark leading-snug md:leading-tight max-w-3xl mx-auto md:mx-0">
-                    Direct access. <span class="whitespace-nowrap">No hand-offs.</span> <br class="hidden md:inline">Built on a decade of engineering rigor.
-                </p>
-            </div>
-
-            <!-- Founder Bio Block -->
-            <div class="mb-16 md:mb-20 bg-brand-light rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
-                <img src="images/mitch-fosco-headshot.jpg" alt="Mitch Fosco, PE" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-md shrink-0">
-                <div class="text-center md:text-left">
-                    <h3 class="text-2xl md:text-3xl font-extrabold text-brand-dark mb-1">Mitch Fosco, PE</h3>
-                    <p class="text-sm uppercase tracking-wider text-brand-hover font-bold mb-4">Founder &amp; Principal Engineer &middot; Licensed in Ohio, Kentucky &amp; California</p>
-                    <p class="text-base text-emerald-950/80 leading-relaxed max-w-2xl">
-                        For over 10 years I've performed misssion-critical engineering studies for large-scale industrial and commercial facilities, from initial field data collection through final engineering report delivery. My experience includes Arc Flash, Short Circuit, and Protective Device Coordination studies using SKM and ETAP in accordance with NFPA 70E, IEEE 1584, and NEC standards. Because of this expertise, clients have asked me to perform third-party reviews of work completed by other firms.
-                        <br><br>
-                        I founded Fosco Engineering to provide the technical rigor and responsive communication that critical electrical systems demand. Every project is approached with a commitment to delivering accurate, practical engineering solutions that improve safety, enhance reliability, and give clients confidence in the systems they depend on.
-                    </p>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1: The Expert's Expert (Shield) -->
-                <div class="bg-white p-8 rounded-xl border border-gray-150 shadow-sm hover:shadow-md transition duration-200 flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-emerald-50 rounded-lg flex items-center justify-center text-brand-accent mb-6">
-                            <!-- Security Shield Icon -->
-                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                            </svg>
-                        </div>
-                        <h4 class="text-xl font-bold text-brand-dark mb-4">Power System Mastery</h4>
-                        <p class="text-sm text-emerald-950/80 leading-relaxed font-medium">
-                            We build complex power system models that are used for arc flash, short-circuit, and protective coordination studies. This continuous exposure to high-stakes analysis gives us the unique technical depth to perform third-party reviews. These reviews surface engineering oversights and protect your facility from catastrophe.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Card 2: Direct P.E. Engagement (Stamp) -->
-                <div class="bg-white p-8 rounded-xl border border-gray-150 shadow-sm hover:shadow-md transition duration-200 flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-emerald-50 rounded-lg flex items-center justify-center text-brand-accent mb-6">
-    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 9h7.5m2.25 11.25v-13.5A2.25 2.25 0 0016.5 4.5h-9A2.25 2.25 0 005 6.75v13.5m14 0h-14m14 0a2.25 2.25 0 002.25-2.25V15M5 20.25a2.25 2.25 0 01-2.25-2.25V15m3 0h13.5" />
-    </svg>
-</div>
-                        <h4 class="text-xl font-bold text-brand-dark mb-4">Direct P.E. Engagement</h4>
-                        <p class="text-sm text-emerald-950/80 leading-relaxed font-medium">
-                           High-impact engineering demands experienced execution. From initial conversation to final deliverable, your project receives the direct, uninterrupted focus of an experienced Professional Engineer who understands the full scope of your operational goals.
-                        </p>
-                    </div>
-                </div>
-
-<!-- Card 3: Uncompromised System Safety (Arc Flash Hazard Triangle) -->
-                <div class="bg-white p-8 rounded-xl border border-gray-150 shadow-sm hover:shadow-md transition duration-200 flex flex-col justify-between">
-                    <div>
-                        <!-- Icon Container Wrapper -->
-                        <div class="w-12 h-12 bg-emerald-50 rounded-lg flex items-center justify-center text-brand-accent mb-6">
-                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
-                                <!-- Sharp ISO Warning Triangle Outline -->
-                                <path d="M12 3L2 20h20L12 3z" />
-                                <!-- Perfectly Scaled & Centered High-Voltage Bolt -->
-                                <path fill="currentColor" stroke="none" d="M13 8.5l-3.5 5h2.5L11 18.5l4.5-6h-2.5L13 8.5z" />
-                            </svg>
-                        </div>
-                        
-                        <h4 class="text-xl font-bold text-brand-dark mb-4">Uncompromised System Safety</h4>
-                        <p class="text-sm text-emerald-950/80 leading-relaxed font-medium">
-                            Our mission is to ensure safety and operational reliability across your electrical infrastructure. We combine power system modeling, arc flash mitigation, and protective device coordination to ensure your team can operate with absolute confidence and your facility is protected from electrical risk.
-                        </p>
-                    </div>
-                </div>
-            </div> <!-- Closes Grid -->
-        </div> <!-- Closes Max-W Container -->
-    </section>
-
-    <!-- Industries Section (Dark High-Contrast Section for Visual Weight + SEO/AI Discoverability) -->
-    <section id="industries" class="bg-brand-dark py-20 md:py-32 w-full relative overflow-hidden">
-        <!-- Subtle accent glow for depth -->
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(16,185,129,0.08),transparent_60%)] pointer-events-none"></div>
-
-        <div class="w-full px-6 md:px-12 max-w-7xl mx-auto relative z-10">
-            <div class="mb-16 md:mb-20 text-center">
-                <h2 class="text-xs uppercase tracking-[0.3em] text-brand-accent font-bold mb-3">Industries We Serve</h2>
-                <p class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white leading-snug md:leading-tight max-w-3xl mx-auto mb-6">
-                    Engineering for <br class="hidden md:block"> <br class="block md:hidden"> Mission-Critical Facilities
-                </p>
-                <p class="text-base md:text-lg text-emerald-100/70 max-w-2xl mx-auto leading-relaxed">
-                    An unplanned outage or an arc flash incident costs far more than the price of protecting the electrical system right the first time. Coordinated protective devices and arc flash labels aren't overhead; they're cheap insurance against the alternative.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 md:gap-8 mb-12 md:mb-16">
-                <!-- Data Centers -->
-                <div class="flex flex-col items-center text-center gap-4">
-                    <div class="w-16 h-16 bg-brand-accent/10 rounded-2xl flex items-center justify-center text-brand-accent">
-                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <rect x="2" y="3" width="20" height="7" rx="1.5" />
-                            <rect x="2" y="14" width="20" height="7" rx="1.5" />
-                            <line x1="6" y1="6.5" x2="6.01" y2="6.5" />
-                            <line x1="6" y1="17.5" x2="6.01" y2="17.5" />
-                            <line x1="10" y1="6.5" x2="14" y2="6.5" />
-                            <line x1="10" y1="17.5" x2="14" y2="17.5" />
-                        </svg>
-                    </div>
-                    <h3 class="text-lg md:text-xl font-bold text-white">Data Centers</h3>
-                </div>
-
-                <!-- Industrial -->
-                <div class="flex flex-col items-center text-center gap-4">
-                    <div class="w-16 h-16 bg-brand-accent/10 rounded-2xl flex items-center justify-center text-brand-accent">
-                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M3 21h18M4 21V10l5-3v3l5-3v3l5-3v13" />
-                            <path d="M8 17h.01M12 17h.01M16 17h.01" />
-                        </svg>
-                    </div>
-                    <h3 class="text-lg md:text-xl font-bold text-white">Industrial Facilities</h3>
-                </div>
-
-                <!-- Commercial -->
-                <div class="flex flex-col items-center text-center gap-4">
-                    <div class="w-16 h-16 bg-brand-accent/10 rounded-2xl flex items-center justify-center text-brand-accent">
-                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M4 21V4a1 1 0 011-1h8a1 1 0 011 1v17M4 21h16M9 8h.01M9 12h.01M9 16h.01M13.5 8h.01M13.5 12h.01M13.5 16h.01M14 21v-6h4v6" />
-                        </svg>
-                    </div>
-                    <h3 class="text-lg md:text-xl font-bold text-white">Commercial Facilities</h3>
-                </div>
-            </div>
-
-            <!-- Electrical Contractors Callout: High-Contrast Accent Banner to Stand Out from Industry Cards -->
-            <div class="bg-brand-accent rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-10">
-                <div class="shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-brand-dark/10 flex items-center justify-center">
-                    <svg class="w-8 h-8 md:w-10 md:h-10 text-brand-dark" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
-                    </svg>
-                </div>
-                <div class="text-center md:text-left">
-                    <h3 class="text-xl md:text-2xl font-extrabold text-brand-dark mb-3">The Go-To Engineering Resource for Electrical Contractors</h3>
-                    <p class="text-sm md:text-base text-emerald-950/80 leading-relaxed font-medium max-w-2xl">
-                        Electrical contractors partner with Fosco Engineering for arc flash studies and third-party reviews without the overhead of an in-house engineering department. 
-                    </p>
-                    <a href="#intake" class="inline-block mt-6 bg-brand-dark hover:bg-black text-white px-6 py-3 rounded text-xs uppercase tracking-wider font-extrabold transition">
-                        Partner With Us
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Expertise Section (Restored Green Canvas Theme) -->
-    <section id="capabilities" class="bg-brand-light py-20 md:py-32 border-b border-emerald-900/5 w-full">
-        <div class="w-full px-6 md:px-12">
-            <div class="text-center mb-16 md:mb-24">
-                <h2 class="text-xs uppercase tracking-[0.3em] text-brand-hover font-bold mb-3">Expertise</h2>
-                <p class="text-3xl md:text-4xl font-extrabold tracking-tight text-brand-dark">Engineering Services</p>
-            </div>
-
-            <!-- Stacked Layout Container for Maximum Line Length and Breathing Room -->
-            <div class="flex flex-col gap-10 max-w-5xl mx-auto">
-                
-                <!-- Card 1: Expert Third-Party Review & Auditing -->
-                <div class="bg-white p-6 md:p-12 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
-                    <h3 class="flex items-center gap-3 text-xl md:text-2xl font-black text-brand-dark mb-6">
-                        <span class="w-1.5 h-6 md:h-7 bg-brand-accent rounded-full"></span>
-                        Third-Party Engineering Reviews
-                    </h3>
-                    
-                    <!-- Full-Width High Contrast Callout Box -->
-                    <div class="bg-emerald-50 border-l-4 border-brand-hover p-5 rounded-r mb-8">
-                        <p class="text-sm md:text-base text-brand-dark font-bold leading-snug">
-                            Quality across engineering firms ranges from excellent to highly questionable.<br><br>
-                            If you're questioning deliverable accuracy or a third-party review is part of your scope, connect with us for an independent expert review.
-                        </p>
-                    </div>
-
-                    <ul class="space-y-4 border-t border-gray-100 pt-6">
-                        <li class="flex items-start text-sm md:text-base text-brand-dark font-semibold">
-                            <span class="text-brand-accent font-bold mr-3 text-lg leading-none">•</span> Standards-based Reviewing (NFPA 70E / IEEE 1584 / NEC)
-                        </li>
-                        <li class="flex items-start text-sm md:text-base text-brand-dark font-semibold">
-                            <span class="text-brand-accent font-bold mr-3 text-lg leading-none">•</span> Comprehensive Arc Flash & Power System Study Review
-                        </li>
-                        <li class="flex items-start text-sm md:text-base text-brand-dark font-semibold">
-                            <span class="text-brand-accent font-bold mr-3 text-lg leading-none">•</span> Peer Review, Quality Control, & Professional Witness
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Card 2: Advanced Modeling & Analysis -->
-                <div class="bg-white p-6 md:p-12 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
-                    <h3 class="flex items-center gap-3 text-xl md:text-2xl font-black text-brand-dark mb-6">
-                        <span class="w-1.5 h-6 md:h-7 bg-brand-accent rounded-full"></span>
-                        Arc Flash Studies
-                    </h3>
-
-                    <!-- Enhanced Multi-Line Callout Box -->
-                    <div class="bg-emerald-50 border-l-4 border-brand-hover p-5 rounded-r mb-8">
-                        <p class="text-sm md:text-base text-brand-dark font-bold leading-snug">
-                            We model, analyze, and optimize critical electrical infrastructure using the highest standard of engineering rigor.<br><br>
-                            Every arc flash study is executed explicitly to ensure personnel safety and electrical system reliability.
-                        </p>
-                    </div>
-
-                    <!-- Streamlined, High-Authority Bullet List -->
-                    <ul class="space-y-4 border-t border-gray-100 pt-6">
-                        <li class="flex items-start text-sm md:text-base text-brand-dark font-semibold">
-                            <span class="text-brand-accent font-bold mr-3 text-lg leading-none">•</span> Arc Flash Hazard Analysis & Mitigation (NFPA 70E / IEEE 1584 / NEC)
-                        </li>
-                        <li class="flex items-start text-sm md:text-base text-brand-dark font-semibold">
-                            <span class="text-brand-accent font-bold mr-3 text-lg leading-none">•</span> Protective Device Coordination & Nuisance Tripping Alleviation
-                        </li>
-                        <li class="flex items-start text-sm md:text-base text-brand-dark font-semibold">
-                            <span class="text-brand-accent font-bold mr-3 text-lg leading-none">•</span> Short Circuit Calculations & Equipment Duty Evaluation
-                        </li>
-                        <li class="flex items-start text-sm md:text-base text-brand-dark font-semibold">
-                            <span class="text-brand-accent font-bold mr-3 text-lg leading-none">•</span> SKM & ETAP software mastery
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Consultation Section -->
-    <section id="intake" class="bg-brand-light py-20 md:py-32 border-b border-emerald-900/5 w-full">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="bg-white border border-gray-200 shadow-xl rounded-xl p-6 md:p-12">
-                <div id="intake-form-header" class="text-center mb-8 md:mb-10">
-                    <h3 class="text-xl md:text-2xl font-bold tracking-tight text-brand-dark mb-2"><u>Request Technical Consultation</u></h3>
-                    <p class="text-xs md:text-sm text-emerald-900/50">Securely submit your technical details to get started.</p>
-                </div>
-
-                <form id="intake-form" action="https://formspree.io/f/mbdvabpd" method="POST" class="space-y-6">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Contact Name <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
-                            <input type="text" name="contact_name" required class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-sm text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition">
-                        </div>
-                        <div>
-                            <label class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Business Name <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
-                            <input type="text" name="business_name" required class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-sm text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition">
-                        </div>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Email <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
-                            <input type="email" name="email" required class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-sm text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition">
-                        </div>
-                        <div>
-                            <label class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Phone <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
-                            <input type="tel" name="phone" required class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-sm text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition">
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Project Address <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
-                        <input type="text" name="project_address" placeholder="Street Address" required class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-sm text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition mb-3">
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                            <input type="text" name="project_city" placeholder="City" required class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-sm text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition col-span-2 md:col-span-2">
-                            <input type="text" name="project_state" placeholder="State" required class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-sm text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition">
-                            <input type="text" name="project_zip" placeholder="ZIP" required class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-sm text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition">
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Requested Scope <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
-                        <select name="scope" required class="w-full appearance-none bg-white border-2 border-gray-300 rounded px-4 py-3 pr-10 text-sm text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition font-medium bg-no-repeat" style="background-image: url('data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 fill=%22none%22 viewBox=%220 0 24 24%22 stroke=%22%2310B981%22 stroke-width=%222.5%22&gt;&lt;path stroke-linecap=%22round%22 stroke-linejoin=%22round%22 d=%22M19 9l-7 7-7-7%22/&gt;&lt;/svg&gt;'); background-position: right 14px center; background-size: 18px 18px;">
-                            <option value="" disabled selected>Select a scope&hellip;</option>
-                            <option>Arc Flash Study</option>
-                            <option>Third-Party Review</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">How Did You Find Us? <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
-                        <select name="referral_source" required class="w-full appearance-none bg-white border-2 border-gray-300 rounded px-4 py-3 pr-10 text-sm text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition font-medium bg-no-repeat" style="background-image: url('data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 fill=%22none%22 viewBox=%220 0 24 24%22 stroke=%22%2310B981%22 stroke-width=%222.5%22&gt;&lt;path stroke-linecap=%22round%22 stroke-linejoin=%22round%22 d=%22M19 9l-7 7-7-7%22/&gt;&lt;/svg&gt;'); background-position: right 14px center; background-size: 18px 18px;">
-                            <option value="" disabled selected>Select an option&hellip;</option>
-                            <option>Electrical Contractor Referral</option>
-                            <option>Insurance / Risk Advisor Referral</option>
-                            <option>Referral / Word of Mouth</option>
-                            <option>LinkedIn</option>
-                            <option>Google Search</option>
-                            <option>Industry Event / Conference</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Project Description <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
-                        <textarea name="message" required rows="5" placeholder="Tell us about your project, timeline, and any specific concerns." class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-sm text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition resize-y"></textarea>
-                    </div>
-
-                    
-
-                    <div id="intake-form-error" class="hidden text-sm text-red-600 font-semibold text-center"></div>
-
-                    <div class="pt-4">
-                        <button type="submit" id="intake-submit-btn" class="w-full bg-brand-accent hover:bg-brand-hover text-black md:text-brand-dark font-extrabold text-xs md:text-sm uppercase tracking-wider py-4 rounded transition shadow-md hover:shadow-lg">
-                            Submit Request
-                        </button>
-                    </div>
-                </form>
-
-                <!-- Thank-you state, shown after successful submission -->
-                <div id="intake-thank-you" class="hidden text-center py-10">
-                    <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-emerald-50 flex items-center justify-center">
-                        <svg class="w-8 h-8 text-brand-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl md:text-2xl font-bold tracking-tight text-brand-dark mb-3">Request Received</h3>
-                    <p class="text-sm md:text-base text-emerald-950/70 max-w-md mx-auto leading-relaxed">
-                        Thank you for reaching out to Fosco Engineering. We've received your project details and will be in touch shortly to discuss next steps.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script>
+        // Intake form (existing Formspree backend, unchanged)
         const intakeForm = document.getElementById('intake-form');
         const intakeFormHeader = document.getElementById('intake-form-header');
         const intakeThankYou = document.getElementById('intake-thank-you');
         const intakeSubmitBtn = document.getElementById('intake-submit-btn');
         const intakeFormError = document.getElementById('intake-form-error');
+        const intakeSubmitLabel = intakeSubmitBtn.textContent.trim();
+
+        function intakeFailed() {
+            intakeFormError.textContent = "Something went wrong submitting your request. Please try again in a moment.";
+            intakeFormError.classList.remove('hidden');
+            intakeSubmitBtn.disabled = false;
+            intakeSubmitBtn.textContent = intakeSubmitLabel;
+        }
 
         intakeForm.addEventListener('submit', async function (e) {
             e.preventDefault();
             intakeFormError.classList.add('hidden');
             intakeSubmitBtn.disabled = true;
-            intakeSubmitBtn.textContent = 'Submitting…';
+            intakeSubmitBtn.textContent = 'Sending…';
 
             try {
                 const response = await fetch(intakeForm.action, {
@@ -542,30 +682,15 @@
                     intakeForm.classList.add('hidden');
                     intakeFormHeader.classList.add('hidden');
                     intakeThankYou.classList.remove('hidden');
+                    intakeThankYou.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 } else {
-                    intakeFormError.textContent = "Something went wrong submitting your request. Please try again or email us directly.";
-                    intakeFormError.classList.remove('hidden');
-                    intakeSubmitBtn.disabled = false;
-                    intakeSubmitBtn.textContent = 'Submit Technical Request';
+                    intakeFailed();
                 }
             } catch (err) {
-                intakeFormError.textContent = "Something went wrong submitting your request. Please try again or email us directly.";
-                intakeFormError.classList.remove('hidden');
-                intakeSubmitBtn.disabled = false;
-                intakeSubmitBtn.textContent = 'Submit Technical Request';
+                intakeFailed();
             }
         });
     </script>
-
-    <footer class="bg-brand-dark text-emerald-100/60 text-xs py-12 md:py-16 w-full">
-        <div class="w-full px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="text-center md:text-left">
-                <p class="font-extrabold text-white tracking-widest text-sm md:text-base mb-1">FOSCO ENGINEERING</p>
-                <p>&copy; 2026 Fosco Engineering LLC. All rights reserved.</p>
-            </div>
-            
-        </div>
-    </footer>
 
 </body>
 </html>

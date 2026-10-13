@@ -1,2 +1,5 @@
 .git
 .wrangler
+# Not part of the public site:
+CLAUDE.md
+archive
