@@ -19,7 +19,7 @@ Mitch Fosco is a licensed Professional Engineer (Ohio, Kentucky, California) who
 
 1. **This business is not an engineering firm and must never look like one.** Do not offer, list or describe engineering services (power studies, arc flash, short-circuit, coordination, forensic or expert-witness work) anywhere on the live site. Mitch's employer allows outside work only if it isn't an engineering firm.
 2. **Do not use "Fosco Engineering" or the word "engineering" as the business name, title, logo text, page title, meta title, schema `name`, or footer name.** "Engineer" may appear only as a personal credential in Mitch's bio, in this exact form: **"Mitch Fosco, PE (Ohio)"**. Never "PE" alone and never "engineer" as a service. (Massachusetts law: an out-of-state license must be qualified by state.)
-3. **No employer or client names, logos, screenshots or code.** Case studies refer only to "a national electrical testing firm." Never mention PSG or Power Solutions Group.
+3. **No employer or client names, logos, screenshots or code.** Case studies refer only to "a national electrical testing firm." Never name Mitch's employer or its parent company anywhere on the site.
 4. **No absolute claims** ("100%", "zero errors", "guaranteed"). Use only the numbers in section 5.
 5. **Don't break deploy.** Keep the existing Cloudflare Workers setup, build config and intake-form backend working. Don't change secrets, bindings or `wrangler` config unless a task below requires it, and ask first if it does.
 6. **Ask before deleting files.** Prefer unpublishing (removing from navigation and routing, or a 301 redirect to the home page) over deletion, so the engineering content can be restored later.
@@ -134,3 +134,38 @@ Clean, confident, practical. This audience is busy owners reading on a phone bet
 - Mitch prefers direct, compressed communication. Short summaries, no filler.
 - Explain anything that changes deploy, routing or DNS before doing it.
 - Never commit secrets. Never push to main without Mitch's OK.
+
+---
+
+## 8. Branding update (Oct 13, 2026) — overrides earlier sections where they conflict
+
+- **Descriptor:** "Bottleneck Breaker" (logo subline, footer, schema, job title). Not "Process & Automation", which stays only in the page title, meta description and FAQ for search.
+- **Tagline:** "Find the bottleneck. Fix the flow."
+- **Hero headline:** "Unlock hidden capacity inside your existing operations." Money and hours get equal weight.
+- **Voice:** polished, plainspoken, thorough. Brand pillar: measured, documented, tested. No jargon.
+- **Pricing:** no prices on the site or in schema. Free 30-minute call first, fixed quote after. Standard line: "Every project is fixed-price and quoted before work starts. No hourly billing, no surprises."
+- **Credential:** only in the About bio, as "licensed Professional Engineer (Ohio, Kentucky and California)". Never "PE" alone, never in the logo, title or headline.
+
+## 9. Targeting update (Oct 13, 2026)
+- **Beachhead:** commercial service contractors that neither compete with nor would buy from Mitch's day-job employer or its parent company (name kept out of this public repo). Lead with commercial HVAC, mechanical and roofing contractors (project and service jobs invoiced on completion, which fits the unbilled-work proof). Other trades are welcome but not named.
+- **Excluded:** electrical contractors, electrical testing, power equipment, generator service, fire alarm/life-safety, data centers, and industrial plants with large electrical systems.
+- **Price anchor (approved):** "Audits start at $1,500 and are credited in full toward the build." All other pricing stays quote-after-call.
+- **Front-door "Unbilled Work Sweep":** declined. Don't add it.
+
+
+## Positioning correction (Oct 13, 2026)
+The service is finding and breaking business bottlenecks, then picking and implementing the right tool, usually one the client already owns but underuses. Unbilled revenue is one *result*, not the service; don't position Mitch as an invoice chaser. Case study 1: project database turned into a live dashboard plus automatic email reminders, which pushed $250K+ in stalled work through to billing. Case study 2: found the most manual steps in reporting and automated them (self-filling templates, standard folders, a one-click package builder). Describe tools in plain English; don't name VBA, Python or Quickbase on the site.
+
+
+## Copy rules (Oct 13, 2026)
+- Hero headline: "Unlock hidden capacity inside your existing operations." No tagline eyebrow in the hero; "Find the bottleneck. Fix the flow." lives in the footer only.
+- CTA wording everywhere: "Request a free call" (normal case, "call" not "consult"). Hero microcopy: "30 minutes. No obligation."
+- The free call is for listening; never promise free diagnosis.
+- Proof strip: "$250K+ in unbilled work recovered".
+
+
+## Client size (Oct 13, 2026)
+Target businesses of about 10–100 people, any industry that runs jobs/projects and bills on completion. Industry exclusions (electrical, power, testing, etc.) still apply.
+
+## Pricing update (Oct 13, 2026)
+No dollar figures on the site, including the audit. Audits and builds are both quoted at a fixed fee; the first 30-minute call is free.
