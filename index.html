@@ -197,18 +197,7 @@
         html { scroll-behavior: smooth; }
 
         /* Subtle cross-grid canvas behind the hero */
-        .grid-canvas {
-            background-color: #ffffff;
-            background-image:
-                radial-gradient(circle at 1px 1px, rgba(16, 185, 129, 0.2) 1.5px, transparent 0),
-                linear-gradient(to right, rgba(16, 185, 129, 0.2) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(16, 185, 129, 0.2) 1px, transparent 1px);
-            background-size: 40px 40px;
-            background-position: center center;
-        }
-        @media (max-width: 639px) {
-            .grid-canvas { background-image: none; }
-        }
+        .grid-canvas { background-color: #ffffff; }
 
         /* Keep anchor targets clear of the sticky header */
         section[id] { scroll-margin-top: 4rem; }
@@ -275,7 +264,7 @@
                 Unlock hidden capacity inside your existing operations.
             </h1>
 
-            <p class="mt-5 md:mt-8 text-[0.95rem] md:text-lg text-emerald-950/70 font-medium max-w-3xl mx-auto leading-relaxed">
+            <p style="text-wrap: balance" class="mt-5 md:mt-8 text-[0.95rem] md:text-lg text-emerald-950/70 font-medium max-w-3xl mx-auto leading-relaxed">
                 I look at how work actually moves through your company with fresh eyes, strip away the friction, and put the right tools to work, usually ones you already pay for.
             </p>
 
