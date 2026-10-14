@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   If the site moves domains, update the <loc> values here and the Sitemap
-  line in robots.txt - the domain also appears in the og:url / og:image tags in index.html.
+  line in robots.txt - the domain also appears in index.html (canonical, og tags, schema) and llms.txt.
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
