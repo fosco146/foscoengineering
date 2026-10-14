@@ -1,0 +1,25 @@
+# Fosco Flow
+
+> Fosco Flow is Mitch Fosco's operations optimization practice for field service businesses (about 10–100 people): companies whose techs finish jobs in the field and whose office bills them later. Mitch finds the bottleneck keeping finished jobs from getting billed and fixes it, usually with software the business already pays for. Fixed-price work, quoted in writing before it starts. Based in Greater Boston, MA; works remotely everywhere.
+
+## Who it's for
+- Field service businesses and service contractors: for example HVAC, plumbing, roofing, pest control, and testing and inspection firms.
+- Signs of fit: jobs closed out in the field but not invoiced for weeks; manual re-typing between systems; service agreement renewals slipping; owners doing paperwork at night; software nobody fully uses.
+- Not offered: electrical work or engineering services.
+
+## How it works
+1. Free 30-minute call: https://calendly.com/mitchfosco/30min
+2. Bottleneck Audit: interviews with the team and a ranked list of the top bottlenecks, with a fixed quote for the fix. Up to two weeks. Credited toward the build.
+3. Bottleneck Breaker: the top fix built with existing tools where possible, tested with the team, and handed over fully documented. Typically two to six weeks.
+
+## Results (work Mitch did inside a national technical services firm)
+- Built a live job board with automated follow-ups that recovered $250K+ in unbilled work and shortened the cycle from job close to invoice.
+- Automated job closeout paperwork: about 2 hours saved per closeout, 200+ hours a year, about $30K a year in labor.
+
+## About
+Mitch Fosco is the founder of Fosco Flow and a licensed Professional Engineer (Ohio, Kentucky and California) with over ten years inside technical service businesses.
+
+## Links
+- Website: https://foscoengineering.com/
+- Book a call: https://calendly.com/mitchfosco/30min
+- LinkedIn: https://www.linkedin.com/in/mitchfosco/
