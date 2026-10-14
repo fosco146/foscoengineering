@@ -9,6 +9,12 @@
     <meta property="og:title" content="Fosco Flow | Operations Optimization for HVAC, Mechanical &amp; Roofing Contractors">
     <meta property="og:description" content="I find the bottleneck keeping finished jobs from getting billed and fix it, usually with software you already pay for. Fixed-price process and automation consulting for HVAC, mechanical and roofing contractors.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://foscoengineering.com/">
+    <meta property="og:image" content="https://foscoengineering.com/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Fosco Flow: Finished jobs that never get billed. Paperwork at 10pm.">
+    <meta name="twitter:card" content="summary_large_image">
     <meta property="og:site_name" content="Fosco Flow">
     <meta property="og:locale" content="en_US">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -163,27 +169,7 @@
         ]
     }
     </script>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            dark: '#0A2F25',   // Deep base text
-                            accent: '#10B981', // Single accent color
-                            hover: '#059669',  // Interactive hover
-                            light: '#F4F7F6'   // Light canvas
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -210,7 +196,7 @@
                         <img src="favicon.png" alt="O" class="w-full h-full object-contain">
                     </span>
                     <span>SCO</span>
-                    <span class="ml-2">FLOW</span>
+                    <span class="pl-2 md:pl-3">FLOW</span>
                 </div>
                 <span class="text-[9px] md:text-[12px] tracking-[0.25em] uppercase text-emerald-800/40 font-black mt-0.5 md:mt-1 transition-colors duration-200 group-hover:text-brand-hover">Operations Optimization</span>
             </a>
@@ -625,8 +611,8 @@
                     </div>
 
                     <div>
-                        <label for="message" class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Where do jobs get stuck? <span class="text-brand-hover normal-case font-semibold">(Required)</span></label>
-                        <textarea id="message" name="message" required rows="5" placeholder="Finished jobs waiting on paperwork, invoices going out late, info typed twice..." class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-base text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition resize-y"></textarea>
+                        <label for="message" class="block text-xs uppercase font-bold tracking-wider text-black/60 mb-2">Where do jobs get stuck? <span class="text-black/40 normal-case font-semibold">(Optional)</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="Finished jobs waiting on paperwork, invoices going out late, info typed twice..." class="w-full bg-white border-2 border-gray-300 rounded px-4 py-3 text-base text-brand-dark shadow-sm focus:outline-none focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20 transition resize-y"></textarea>
                     </div>
 
                     <div id="intake-form-error" class="hidden text-sm text-red-600 font-semibold text-center"></div>

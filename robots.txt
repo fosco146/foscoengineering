@@ -2,5 +2,5 @@ User-agent: *
 Allow: /
 
 # If the site moves domains, update this line and sitemap.xml - the domain
-# appears in no other file.
+# also appears in the og:url / og:image tags in index.html.
 Sitemap: https://foscoengineering.com/sitemap.xml

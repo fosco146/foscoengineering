@@ -7,3 +7,6 @@ archive
 # Internal notes
 bottleneck-breaker-brief.md
 .gitignore
+
+# Build tooling
+tools
